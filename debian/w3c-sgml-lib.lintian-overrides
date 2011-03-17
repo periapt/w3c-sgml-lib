@@ -1,0 +1,3 @@
+# Upstream does not package the changelog but we state where to
+# find it in README.Debian
+w3c-sgml-lib: no-upstream-changelog

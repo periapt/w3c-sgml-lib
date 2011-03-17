@@ -1,0 +1,11 @@
+Upstream changelog
+==================
+The changelog for this package is available at
+http://validator.w3.org/whatsnew.html .
+
+This package is intended to supersede the w3c-dtd-xhtml package.
+As such it puts in place a number of symlinks.
+Please migrate applications from w3c-dtd-xhtml to w3c-sgml-dtd
+and use the catalog mechanisms to ensure that your paths are not
+hard-coded.
+

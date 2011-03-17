@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+PKG  := $(shell dh_listpackages)
+TMP  := $(CURDIR)/debian/$(PKG)
+
+%:
+	dh $@ 
+
+override_dh_install:
+	dh_install
+	dh_installxmlcatalogs
+	rm -rf $(TMP)/etc
+
