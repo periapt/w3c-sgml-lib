@@ -1,13 +1,12 @@
 Source: w3c-sgml-lib
 Section: text
 Priority: optional
-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
-Uploaders: Nicholas Bamber <nicholas@periapt.co.uk>, Daniel Leidert (dale) <daniel.leidert@wgdd.de>, Jaldhar H. Vyas <jaldhar@debian.org>
+Nicholas Bamber <nicholas@periapt.co.uk>
 Build-Depends: debhelper (>= 7.0.50~), xml-core
 Standards-Version: 3.9.1
 Homepage: http://validator.w3.org/sgml-lib
-Vcs-Svn: svn://svn.debian.org/svn/debian-xml-sgml/packages/w3c-sgml-lib/trunk/
-Vcs-Browser: http://svn.debian.org/wsvn/debian-xml-sgml/packages/w3c-sgml-lib/
+Vcs-Git: git://github.com/periapt/w3c-sgml-lib.git
+Vcs-Browser: https://github.com/periapt/w3c-sgml-lib
 
 Package: w3c-sgml-lib
 Architecture: all
