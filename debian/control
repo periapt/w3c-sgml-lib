@@ -1,7 +1,7 @@
 Source: w3c-sgml-lib
 Section: text
 Priority: optional
-Nicholas Bamber <nicholas@periapt.co.uk>
+Maintainer: Nicholas Bamber <nicholas@periapt.co.uk>
 Build-Depends: debhelper (>= 7.0.50~), xml-core
 Standards-Version: 3.9.1
 Homepage: http://validator.w3.org/sgml-lib

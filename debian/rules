@@ -9,5 +9,4 @@ TMP  := $(CURDIR)/debian/$(PKG)
 override_dh_install:
 	dh_install
 	dh_installxmlcatalogs
-	rm -rf $(TMP)/etc
 
