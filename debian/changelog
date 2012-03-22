@@ -3,6 +3,8 @@ w3c-sgml-lib (1.2-2) UNRELEASED; urgency=low
   * Moved to personal maintainership 
   * Removing broken links
   * Declared Conflicts with w3c-dtd-xhtml (Closes: #??????)
+    and removed legacy support
+  * Raised standards version to 3.9.3
 
  -- Nicholas Bamber <nicholas@periapt.co.uk>  Sun, 11 Mar 2012 16:17:24 +0000
 

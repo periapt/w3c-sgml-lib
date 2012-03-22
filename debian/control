@@ -3,7 +3,7 @@ Section: text
 Priority: optional
 Maintainer: Nicholas Bamber <nicholas@periapt.co.uk>
 Build-Depends: debhelper (>= 7.0.50~), xml-core
-Standards-Version: 3.9.1
+Standards-Version: 3.9.3
 Homepage: http://validator.w3.org/sgml-lib
 Vcs-Git: git://github.com/periapt/w3c-sgml-lib.git
 Vcs-Browser: https://github.com/periapt/w3c-sgml-lib

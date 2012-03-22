@@ -1,20 +1,16 @@
-Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=135
-Maintainer: http://validator.w3.org/feedback.html
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Contact: http://validator.w3.org/feedback.html
 Source: http://validator.w3.org/dist/sgml-lib.tar.gz
-Name: W3C SGML Library
+Upstream-Name: W3C SGML Library
 
 Files: *
-Copyright 1994-2010, W3C(R) (MIT, ERCIM, KEIO)
+Copyright: 1994-2010, W3C(R) (MIT, ERCIM, KEIO)
 License: W3C-Software
 
 Files: debian/*
 Copyright:
- 2010-2011, Nicholas Bamber <nicholas@periapt.co.uk>
+ 2010-2012, Nicholas Bamber <nicholas@periapt.co.uk>
 License: Artistic
-
-Files: debian/legacy/*
-Copyright 1994-2010, W3C(R) (MIT, ERCIM, KEIO)
-License: W3C-Software
 
 License: W3C-Software
  By obtaining, using and/or copying this work, you (the licensee) agree
