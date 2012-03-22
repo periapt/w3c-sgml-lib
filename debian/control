@@ -12,15 +12,8 @@ Package: w3c-sgml-lib
 Architecture: all
 Depends: ${misc:Depends}
 Conflicts: w3c-dtd-xhtml
-Provides: w3c-dtd-xhtml
-Replaces: w3c-dtd-xhtml
 Description: w3.org DTD and catalog files
  This package consists of all the definition files used by the 
  W3C Markup Validator. It consists of DTDs and modules, entity files
  and XML and SGML catalogs. The catalogs are registered with the root
  catalogs.
- .
- Since the files come from the W3C they layout is different from the
- w3c-dtd-xhtml package. However in an effort to maintain backwards
- compatibility there are symbolic links to best matches. These are not
- referenced by the catalog files and will be removd in a leter release.

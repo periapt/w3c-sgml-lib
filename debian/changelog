@@ -1,7 +1,8 @@
 w3c-sgml-lib (1.2-2) UNRELEASED; urgency=low
 
   * Moved to personal maintainership 
-  * Remvoing broken links
+  * Removing broken links
+  * Declared Conflicts with w3c-dtd-xhtml (Closes: #??????)
 
  -- Nicholas Bamber <nicholas@periapt.co.uk>  Sun, 11 Mar 2012 16:17:24 +0000
 
