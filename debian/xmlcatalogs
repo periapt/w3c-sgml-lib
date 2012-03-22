@@ -1,745 +1,745 @@
-local;htdocs/sgml-lib/catalog.xml;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+local;htdocs/sgml-lib/catalog.xml;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 root;public;-//W3C//DTD Specification V2.0//EN
-package;public;-//W3C//DTD Specification V2.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD Specification V2.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD Specification V2.1//EN
-package;public;-//W3C//DTD Specification V2.1//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD Specification V2.1//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD Specification V2.10//EN
-package;public;-//W3C//DTD Specification V2.10//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD Specification V2.10//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD MathML 2.0//EN
-package;public;-//W3C//DTD MathML 2.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD MathML 2.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;system;http://www.w3.org/Math/DTD/mathml2/mathml2.dtd
-package;system;http://www.w3.org/Math/DTD/mathml2/mathml2.dtd;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;system;http://www.w3.org/Math/DTD/mathml2/mathml2.dtd;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN
-package;public;-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN
-package;public;-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;system;http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd
-package;system;http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;system;http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD MathML 3.0//EN
-package;public;-//W3C//DTD MathML 3.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD MathML 3.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES MathML 3.0 Qualified Names 1.0//EN
-package;public;-//W3C//ENTITIES MathML 3.0 Qualified Names 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES MathML 3.0 Qualified Names 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Box and Line Drawing//EN
-package;public;-//W3C//ENTITIES Box and Line Drawing//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Box and Line Drawing//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Russian Cyrillic//EN
-package;public;-//W3C//ENTITIES Russian Cyrillic//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Russian Cyrillic//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Non-Russian Cyrillic//EN
-package;public;-//W3C//ENTITIES Non-Russian Cyrillic//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Non-Russian Cyrillic//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Diacritical Marks//EN
-package;public;-//W3C//ENTITIES Diacritical Marks//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Diacritical Marks//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Latin 1//EN
-package;public;-//W3C//ENTITIES Added Latin 1//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Latin 1//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Latin 2//EN
-package;public;-//W3C//ENTITIES Added Latin 2//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Latin 2//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Numeric and Special Graphic//EN
-package;public;-//W3C//ENTITIES Numeric and Special Graphic//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Numeric and Special Graphic//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Publishing//EN
-package;public;-//W3C//ENTITIES Publishing//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Publishing//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Math Symbols: Arrow Relations//EN
-package;public;-//W3C//ENTITIES Added Math Symbols: Arrow Relations//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Math Symbols: Arrow Relations//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Math Symbols: Binary Operators//EN
-package;public;-//W3C//ENTITIES Added Math Symbols: Binary Operators//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Math Symbols: Binary Operators//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Math Symbols: Delimiters//EN
-package;public;-//W3C//ENTITIES Added Math Symbols: Delimiters//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Math Symbols: Delimiters//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Math Symbols: Negated Relations//EN
-package;public;-//W3C//ENTITIES Added Math Symbols: Negated Relations//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Math Symbols: Negated Relations//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Math Symbols: Ordinary//EN
-package;public;-//W3C//ENTITIES Added Math Symbols: Ordinary//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Math Symbols: Ordinary//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Math Symbols: Relations//EN
-package;public;-//W3C//ENTITIES Added Math Symbols: Relations//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Math Symbols: Relations//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Greek Symbols//EN
-package;public;-//W3C//ENTITIES Greek Symbols//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Greek Symbols//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Math Alphabets: Fraktur//EN
-package;public;-//W3C//ENTITIES Math Alphabets: Fraktur//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Math Alphabets: Fraktur//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Math Alphabets: Open Face//EN
-package;public;-//W3C//ENTITIES Math Alphabets: Open Face//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Math Alphabets: Open Face//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Math Alphabets: Script//EN
-package;public;-//W3C//ENTITIES Math Alphabets: Script//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Math Alphabets: Script//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES General Technical//EN
-package;public;-//W3C//ENTITIES General Technical//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES General Technical//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Additional MathML Symbols//EN
-package;public;-//W3C//ENTITIES Additional MathML Symbols//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Additional MathML Symbols//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES MathML Aliases//EN
-package;public;-//W3C//ENTITIES MathML Aliases//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES MathML Aliases//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SVG 1.0//EN
-package;public;-//W3C//DTD SVG 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SVG 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SVG 1.1//EN
-package;public;-//W3C//DTD SVG 1.1//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SVG 1.1//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SVG 1.1 Basic//EN
-package;public;-//W3C//DTD SVG 1.1 Basic//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SVG 1.1 Basic//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SVG 1.1 Tiny//EN
-package;public;-//W3C//DTD SVG 1.1 Tiny//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SVG 1.1 Tiny//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SVG Basic 1.1//EN
-package;public;-//W3C//DTD SVG Basic 1.1//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SVG Basic 1.1//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SVG Tiny 1.1//EN
-package;public;-//W3C//DTD SVG Tiny 1.1//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SVG Tiny 1.1//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Document Model//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Document Model//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Document Model//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Basic Document Model//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Basic Document Model//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Basic Document Model//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Tiny Document Model//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Tiny Document Model//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Tiny Document Model//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Attribute Collection//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Attribute Collection//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Attribute Collection//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Basic Attribute Collection//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Basic Attribute Collection//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Basic Attribute Collection//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Tiny Attribute Collection//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Tiny Attribute Collection//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Tiny Attribute Collection//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Animation//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Animation//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Animation//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Animation Events Attribute//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Animation Events Attribute//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Animation Events Attribute//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Basic Clip//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Basic Clip//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Basic Clip//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Basic Filter//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Basic Filter//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Basic Filter//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Basic Font//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Basic Font//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Basic Font//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Basic Graphics Attribute//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Basic Graphics Attribute//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Basic Graphics Attribute//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Basic Paint Attribute//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Basic Paint Attribute//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Basic Paint Attribute//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Basic Structure//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Basic Structure//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Basic Structure//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Basic Text//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Basic Text//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Basic Text//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Clip//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Clip//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Clip//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Conditional Processing//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Conditional Processing//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Conditional Processing//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Container Attribute//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Container Attribute//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Container Attribute//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Core Attribute//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Core Attribute//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Core Attribute//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Cursor//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Cursor//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Cursor//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Datatypes//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Datatypes//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Datatypes//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Document Events Attribute//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Document Events Attribute//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Document Events Attribute//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Extensibility//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Extensibility//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Extensibility//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 External Resources Attribute//EN
-package;public;-//W3C//ENTITIES SVG 1.1 External Resources Attribute//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 External Resources Attribute//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Filter//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Filter//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Filter//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Font//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Font//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Font//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Modular Framework//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Modular Framework//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Modular Framework//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Gradient//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Gradient//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Gradient//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Graphical Element Events Attribute//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Graphical Element Events Attribute//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Graphical Element Events Attribute//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Graphics Attribute//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Graphics Attribute//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Graphics Attribute//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Hyperlinking//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Hyperlinking//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Hyperlinking//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Image//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Image//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Image//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Marker//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Marker//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Marker//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Mask//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Mask//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Mask//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Paint Opacity Attribute//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Paint Opacity Attribute//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Paint Opacity Attribute//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Paint Attribute//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Paint Attribute//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Paint Attribute//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Pattern//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Pattern//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Pattern//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Color Profile//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Color Profile//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Color Profile//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Qualified Name//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Qualified Name//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Qualified Name//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Scripting//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Scripting//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Scripting//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Shape//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Shape//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Shape//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Structure//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Structure//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Structure//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Style//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Style//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Style//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 Text//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 Text//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 Text//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SVG 1.1 View//EN
-package;public;-//W3C//ELEMENTS SVG 1.1 View//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SVG 1.1 View//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 Viewport Attribute//EN
-package;public;-//W3C//ENTITIES SVG 1.1 Viewport Attribute//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 Viewport Attribute//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SVG 1.1 XLink Attribute//EN
-package;public;-//W3C//ENTITIES SVG 1.1 XLink Attribute//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SVG 1.1 XLink Attribute//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD XHTML 1.0 Strict//EN
-package;public;-//W3C//DTD XHTML 1.0 Strict//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD XHTML 1.0 Strict//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD XHTML 1.0 Transitional//EN
-package;public;-//W3C//DTD XHTML 1.0 Transitional//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD XHTML 1.0 Transitional//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD XHTML 1.0 Frameset//EN
-package;public;-//W3C//DTD XHTML 1.0 Frameset//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD XHTML 1.0 Frameset//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD XHTML 1.1//EN
-package;public;-//W3C//DTD XHTML 1.1//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD XHTML 1.1//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML 1.1 Document Model 1.0//EN
-package;public;-//W3C//ENTITIES XHTML 1.1 Document Model 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML 1.1 Document Model 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD XHTML Basic 1.0//EN
-package;public;-//W3C//DTD XHTML Basic 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD XHTML Basic 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML Basic 1.0 Document Model 1.0//EN
-package;public;-//W3C//ENTITIES XHTML Basic 1.0 Document Model 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML Basic 1.0 Document Model 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD XHTML Basic 1.1//EN
-package;public;-//W3C//DTD XHTML Basic 1.1//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD XHTML Basic 1.1//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML Basic 1.1 Document Model 1.0//EN
-package;public;-//W3C//ENTITIES XHTML Basic 1.1 Document Model 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML Basic 1.1 Document Model 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Inputmode 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Inputmode 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Inputmode 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD XHTML-Print 1.0//EN
-package;public;-//W3C//DTD XHTML-Print 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD XHTML-Print 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML-Print 1.0 Document Model 1.0//EN
-package;public;-//W3C//ENTITIES XHTML-Print 1.0 Document Model 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML-Print 1.0 Document Model 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN
-package;public;-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD XHTML Basic plus SVG Tiny//EN
-package;public;-//W3C//DTD XHTML Basic plus SVG Tiny//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD XHTML Basic plus SVG Tiny//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD XHTML+RDFa 1.0//EN
-package;public;-//W3C//DTD XHTML+RDFa 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD XHTML+RDFa 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML+RDFa Document Model 1.0//EN
-package;public;-//W3C//ENTITIES XHTML+RDFa Document Model 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML+RDFa Document Model 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML MetaAttributes 1.0//EN
-package;public;-//W3C//ENTITIES XHTML MetaAttributes 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML MetaAttributes 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD XHTML+RDFa 1.1//EN
-package;public;-//W3C//DTD XHTML+RDFa 1.1//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD XHTML+RDFa 1.1//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML+RDFa Document Model 1.1//EN
-package;public;-//W3C//ENTITIES XHTML+RDFa Document Model 1.1//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML+RDFa Document Model 1.1//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML MetaAttributes 1.1//EN
-package;public;-//W3C//ENTITIES XHTML MetaAttributes 1.1//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML MetaAttributes 1.1//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SMIL 1.0//EN
-package;public;-//W3C//DTD SMIL 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SMIL 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SMIL 2.0//EN
-package;public;-//W3C//DTD SMIL 2.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SMIL 2.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SMIL 2.0 Basic//EN
-package;public;-//W3C//DTD SMIL 2.0 Basic//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SMIL 2.0 Basic//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 2.0 Modular Framework 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 2.0 Modular Framework 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 2.0 Modular Framework 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 2.0 Datatypes 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 2.0 Datatypes 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 2.0 Datatypes 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 2.0 Qualified Names 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 2.0 Qualified Names 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 2.0 Qualified Names 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 2.0 Common Attributes 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 2.0 Common Attributes 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 2.0 Common Attributes 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 2.0 Document Model 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 2.0 Document Model 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 2.0 Document Model 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.0 Document Structure//EN
-package;public;-//W3C//ELEMENTS SMIL 2.0 Document Structure//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.0 Document Structure//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.0 Animation//EN
-package;public;-//W3C//ELEMENTS SMIL 2.0 Animation//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.0 Animation//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.0 Content Control//EN
-package;public;-//W3C//ELEMENTS SMIL 2.0 Content Control//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.0 Content Control//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.0 Document Metainformation//EN
-package;public;-//W3C//ELEMENTS SMIL 2.0 Document Metainformation//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.0 Document Metainformation//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.0 Layout//EN
-package;public;-//W3C//ELEMENTS SMIL 2.0 Layout//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.0 Layout//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.0 Linking//EN
-package;public;-//W3C//ELEMENTS SMIL 2.0 Linking//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.0 Linking//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.0 Media Objects//EN
-package;public;-//W3C//ELEMENTS SMIL 2.0 Media Objects//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.0 Media Objects//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.0 Timing//EN
-package;public;-//W3C//ELEMENTS SMIL 2.0 Timing//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.0 Timing//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.0 Transition//EN
-package;public;-//W3C//ELEMENTS SMIL 2.0 Transition//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.0 Transition//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.0 Integration//EN
-package;public;-//W3C//ELEMENTS SMIL 2.0 Integration//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.0 Integration//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SMIL 2.1//EN
-package;public;-//W3C//DTD SMIL 2.1//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SMIL 2.1//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SMIL 2.1 Extended Mobile//EN
-package;public;-//W3C//DTD SMIL 2.1 Extended Mobile//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SMIL 2.1 Extended Mobile//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SMIL 2.1 Mobile//EN
-package;public;-//W3C//DTD SMIL 2.1 Mobile//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SMIL 2.1 Mobile//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 2.1 Language Profile Document Model 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 2.1 Language Profile Document Model 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 2.1 Language Profile Document Model 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 2.1 Extended Mobile Profile Document Model 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 2.1 Extended Mobile Profile Document Model 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 2.1 Extended Mobile Profile Document Model 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 2.1 Mobile Profile Document Model 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 2.1 Mobile Profile Document Model 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 2.1 Mobile Profile Document Model 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 2.1 Datatypes 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 2.1 Datatypes 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 2.1 Datatypes 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 2.1 Common Attributes 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 2.1 Common Attributes 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 2.1 Common Attributes 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 2.1 Qualified Names 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 2.1 Qualified Names 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 2.1 Qualified Names 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 2.1 Modular Framework 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 2.1 Modular Framework 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 2.1 Modular Framework 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.1 Animation//EN
-package;public;-//W3C//ELEMENTS SMIL 2.1 Animation//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.1 Animation//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.1 Content Control//EN
-package;public;-//W3C//ELEMENTS SMIL 2.1 Content Control//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.1 Content Control//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.1 Layout//EN
-package;public;-//W3C//ELEMENTS SMIL 2.1 Layout//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.1 Layout//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.1 Linking//EN
-package;public;-//W3C//ELEMENTS SMIL 2.1 Linking//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.1 Linking//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.1 Media Objects//EN
-package;public;-//W3C//ELEMENTS SMIL 2.1 Media Objects//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.1 Media Objects//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.1 Document Metainformation//EN
-package;public;-//W3C//ELEMENTS SMIL 2.1 Document Metainformation//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.1 Document Metainformation//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.1 Document Structure//EN
-package;public;-//W3C//ELEMENTS SMIL 2.1 Document Structure//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.1 Document Structure//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.1 Timing//EN
-package;public;-//W3C//ELEMENTS SMIL 2.1 Timing//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.1 Timing//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 2.1 Transition//EN
-package;public;-//W3C//ELEMENTS SMIL 2.1 Transition//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 2.1 Transition//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SMIL 3.0 Language//EN
-package;public;-//W3C//DTD SMIL 3.0 Language//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SMIL 3.0 Language//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SMIL 3.0 Unified Mobile//EN
-package;public;-//W3C//DTD SMIL 3.0 Unified Mobile//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SMIL 3.0 Unified Mobile//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SMIL 3.0 Daisy//EN
-package;public;-//W3C//DTD SMIL 3.0 Daisy//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SMIL 3.0 Daisy//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SMIL 3.0 Tiny//EN
-package;public;-//W3C//DTD SMIL 3.0 Tiny//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SMIL 3.0 Tiny//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD SMIL 3.0 smilText//EN
-package;public;-//W3C//DTD SMIL 3.0 smilText//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD SMIL 3.0 smilText//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 3.0 Datatypes 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 3.0 Datatypes 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 3.0 Datatypes 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 3.0 Modular Framework 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 3.0 Modular Framework 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 3.0 Modular Framework 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 3.0 Document Model 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 3.0 Document Model 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 3.0 Document Model 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 3.0 Qualified Names 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 3.0 Qualified Names 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 3.0 Qualified Names 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES SMIL 3.0 Common Attributes 1.0//EN
-package;public;-//W3C//ENTITIES SMIL 3.0 Common Attributes 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES SMIL 3.0 Common Attributes 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 3.0 Animation//EN
-package;public;-//W3C//ELEMENTS SMIL 3.0 Animation//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 3.0 Animation//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 3.0 Content Control//EN
-package;public;-//W3C//ELEMENTS SMIL 3.0 Content Control//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 3.0 Content Control//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 3.0 Layout//EN
-package;public;-//W3C//ELEMENTS SMIL 3.0 Layout//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 3.0 Layout//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 3.0 Linking//EN
-package;public;-//W3C//ELEMENTS SMIL 3.0 Linking//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 3.0 Linking//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 3.0 Media Objects//EN
-package;public;-//W3C//ELEMENTS SMIL 3.0 Media Objects//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 3.0 Media Objects//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 3.0 Document Metainformation//EN
-package;public;-//W3C//ELEMENTS SMIL 3.0 Document Metainformation//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 3.0 Document Metainformation//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 3.0 SMILtext//EN
-package;public;-//W3C//ELEMENTS SMIL 3.0 SMILtext//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 3.0 SMILtext//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 3.0 State//EN
-package;public;-//W3C//ELEMENTS SMIL 3.0 State//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 3.0 State//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 3.0 Document Structure//EN
-package;public;-//W3C//ELEMENTS SMIL 3.0 Document Structure//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 3.0 Document Structure//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 3.0 Timesheet//EN
-package;public;-//W3C//ELEMENTS SMIL 3.0 Timesheet//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 3.0 Timesheet//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 3.0 Timing//EN
-package;public;-//W3C//ELEMENTS SMIL 3.0 Timing//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 3.0 Timing//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS SMIL 3.0 Transition//EN
-package;public;-//W3C//ELEMENTS SMIL 3.0 Transition//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS SMIL 3.0 Transition//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML Modular Framework 1.0//EN
-package;public;-//W3C//ENTITIES XHTML Modular Framework 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML Modular Framework 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//NOTATIONS XHTML Notations 1.0//EN
-package;public;-//W3C//NOTATIONS XHTML Notations 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//NOTATIONS XHTML Notations 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML Datatypes 1.0//EN
-package;public;-//W3C//ENTITIES XHTML Datatypes 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML Datatypes 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML Qualified Names 1.0//EN
-package;public;-//W3C//ENTITIES XHTML Qualified Names 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML Qualified Names 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML Common Attributes 1.0//EN
-package;public;-//W3C//ENTITIES XHTML Common Attributes 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML Common Attributes 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML Character Entities 1.0//EN
-package;public;-//W3C//ENTITIES XHTML Character Entities 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML Character Entities 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Redeclarations 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Redeclarations 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Redeclarations 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Document Structure 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Document Structure 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Document Structure 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Text 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Text 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Text 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Hypertext 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Hypertext 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Hypertext 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Lists 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Lists 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Lists 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Inline Structural 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Inline Structural 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Inline Structural 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Inline Presentation 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Inline Presentation 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Inline Presentation 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Inline Phrasal 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Inline Phrasal 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Inline Phrasal 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Block Structural 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Block Structural 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Block Structural 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Block Presentation 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Block Presentation 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Block Presentation 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Block Phrasal 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Block Phrasal 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Block Phrasal 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Ruby 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Ruby 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Ruby 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Java Applets 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Java Applets 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Java Applets 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Base Architecture 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Base Architecture 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Base Architecture 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//DTD XHTML Architecture 1.1//EN
-package;public;-//W3C//DTD XHTML Architecture 1.1//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//DTD XHTML Architecture 1.1//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Param Element 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Param Element 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Param Element 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Presentation 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Presentation 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Presentation 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Editing Elements 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Editing Elements 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Editing Elements 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Editing Markup 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Editing Markup 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Editing Markup 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML BDO Element 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML BDO Element 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML BDO Element 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML BIDI Override Element 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML BIDI Override Element 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML BIDI Override Element 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Basic Forms 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Basic Forms 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Basic Forms 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Forms 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Forms 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Forms 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Basic Tables 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Basic Tables 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Basic Tables 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Tables 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Tables 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Tables 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Images 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Images 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Images 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Client-side Image Maps 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Client-side Image Maps 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Client-side Image Maps 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Server-side Image Maps 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Server-side Image Maps 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Server-side Image Maps 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML Intrinsic Events 1.0//EN
-package;public;-//W3C//ENTITIES XHTML Intrinsic Events 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML Intrinsic Events 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Metainformation 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Metainformation 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Metainformation 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Scripting 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Scripting 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Scripting 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Style Sheets 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Style Sheets 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Style Sheets 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Link Element 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Link Element 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Link Element 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Base Element 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Base Element 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Base Element 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Legacy Redeclarations 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Legacy Redeclarations 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Legacy Redeclarations 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Legacy Markup 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Legacy Markup 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Legacy Markup 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Embedded Object 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Embedded Object 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Embedded Object 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Frames 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Frames 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Frames 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Target 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Target 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Target 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Inline Frame Element 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Inline Frame Element 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Inline Frame Element 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Inline Style 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Inline Style 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Inline Style 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES XHTML Inline Style 1.0//EN
-package;public;-//W3C//ENTITIES XHTML Inline Style 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES XHTML Inline Style 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ELEMENTS XHTML Name Identifier 1.0//EN
-package;public;-//W3C//ELEMENTS XHTML Name Identifier 1.0//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ELEMENTS XHTML Name Identifier 1.0//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Latin 1 for XHTML//EN
-package;public;-//W3C//ENTITIES Latin 1 for XHTML//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Latin 1 for XHTML//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Special for XHTML//EN
-package;public;-//W3C//ENTITIES Special for XHTML//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Special for XHTML//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Symbols for XHTML//EN
-package;public;-//W3C//ENTITIES Symbols for XHTML//EN;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Symbols for XHTML//EN;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES uppercase aliases for HTML//EN//XML
-package;public;-//W3C//ENTITIES uppercase aliases for HTML//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES uppercase aliases for HTML//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES HTML MathML Set//EN//XML
-package;public;-//W3C//ENTITIES HTML MathML Set//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES HTML MathML Set//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;system;http://www.w3.org/2003/entities/2007/htmlmathml-f.ent
-package;system;http://www.w3.org/2003/entities/2007/htmlmathml-f.ent;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;system;http://www.w3.org/2003/entities/2007/htmlmathml-f.ent;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Math Symbols: Arrow Relations//EN//XML
-package;public;-//W3C//ENTITIES Added Math Symbols: Arrow Relations//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Math Symbols: Arrow Relations//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Math Symbols: Binary Operators//EN//XML
-package;public;-//W3C//ENTITIES Added Math Symbols: Binary Operators//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Math Symbols: Binary Operators//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Math Symbols: Delimiters//EN//XML
-package;public;-//W3C//ENTITIES Added Math Symbols: Delimiters//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Math Symbols: Delimiters//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Math Symbols: Negated Relations//EN//XML
-package;public;-//W3C//ENTITIES Added Math Symbols: Negated Relations//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Math Symbols: Negated Relations//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Math Symbols: Ordinary//EN//XML
-package;public;-//W3C//ENTITIES Added Math Symbols: Ordinary//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Math Symbols: Ordinary//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Math Symbols: Relations//EN//XML
-package;public;-//W3C//ENTITIES Added Math Symbols: Relations//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Math Symbols: Relations//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Box and Line Drawing//EN//XML
-package;public;-//W3C//ENTITIES Box and Line Drawing//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Box and Line Drawing//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Russian Cyrillic//EN//XML
-package;public;-//W3C//ENTITIES Russian Cyrillic//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Russian Cyrillic//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Non-Russian Cyrillic//EN//XML
-package;public;-//W3C//ENTITIES Non-Russian Cyrillic//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Non-Russian Cyrillic//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Diacritical Marks//EN//XML
-package;public;-//W3C//ENTITIES Diacritical Marks//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Diacritical Marks//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Greek Letters//EN//XML
-package;public;-//W3C//ENTITIES Greek Letters//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Greek Letters//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Monotoniko Greek//EN//XML
-package;public;-//W3C//ENTITIES Monotoniko Greek//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Monotoniko Greek//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Greek Symbols//EN//XML
-package;public;-//W3C//ENTITIES Greek Symbols//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Greek Symbols//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Alternative Greek Symbols//EN//XML
-package;public;-//W3C//ENTITIES Alternative Greek Symbols//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Alternative Greek Symbols//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Latin 1//EN//XML
-package;public;-//W3C//ENTITIES Added Latin 1//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Latin 1//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Added Latin 2//EN//XML
-package;public;-//W3C//ENTITIES Added Latin 2//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Added Latin 2//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Math Alphabets: Fraktur//EN//XML
-package;public;-//W3C//ENTITIES Math Alphabets: Fraktur//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Math Alphabets: Fraktur//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Math Alphabets: Open Face//EN//XML
-package;public;-//W3C//ENTITIES Math Alphabets: Open Face//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Math Alphabets: Open Face//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Math Alphabets: Script//EN//XML
-package;public;-//W3C//ENTITIES Math Alphabets: Script//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Math Alphabets: Script//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Numeric and Special Graphic//EN//XML
-package;public;-//W3C//ENTITIES Numeric and Special Graphic//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Numeric and Special Graphic//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Publishing//EN//XML
-package;public;-//W3C//ENTITIES Publishing//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Publishing//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES General Technical//EN//XML
-package;public;-//W3C//ENTITIES General Technical//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES General Technical//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES MathML Aliases//EN//XML
-package;public;-//W3C//ENTITIES MathML Aliases//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES MathML Aliases//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Additional MathML Symbols//EN//XML
-package;public;-//W3C//ENTITIES Additional MathML Symbols//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Additional MathML Symbols//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Predefined XML//EN///XML
-package;public;-//W3C//ENTITIES Predefined XML//EN///XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Predefined XML//EN///XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Combined Set//EN//XML
-package;public;-//W3C//ENTITIES Combined Set//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Combined Set//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;system;http://www.w3.org/2003/entities/2007/w3centities-f.ent
-package;system;http://www.w3.org/2003/entities/2007/w3centities-f.ent;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;system;http://www.w3.org/2003/entities/2007/w3centities-f.ent;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Latin for HTML//EN//XML
-package;public;-//W3C//ENTITIES Latin for HTML//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Latin for HTML//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Special for HTML//EN//XML
-package;public;-//W3C//ENTITIES Special for HTML//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Special for HTML//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 
 root;public;-//W3C//ENTITIES Symbol for HTML//EN//XML
-package;public;-//W3C//ENTITIES Symbol for HTML//EN//XML;/usr/share/xml/xhtml/schema/dtd/catalog.xml
+package;public;-//W3C//ENTITIES Symbol for HTML//EN//XML;/usr/share/xml/w3c-sgml-lib/schema/dtd/catalog.xml
 

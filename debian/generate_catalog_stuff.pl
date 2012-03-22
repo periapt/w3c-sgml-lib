@@ -9,7 +9,7 @@ use autodie qw(open close);
 
 Readonly my $SOURCE_DIR => 'htdocs/sgml-lib';
 Readonly my $CATALOG_XML => 'catalog.xml';
-Readonly my $DEST_DIR => 'usr/share/xml/xhtml/schema/dtd';
+Readonly my $DEST_DIR => 'usr/share/xml/w3c-sgml-lib/schema/dtd';
 
 # Sanity check the files
 foreach my $file ('debian', $SOURCE_DIR) {

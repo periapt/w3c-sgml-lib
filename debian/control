@@ -11,7 +11,6 @@ Vcs-Browser: https://github.com/periapt/w3c-sgml-lib
 Package: w3c-sgml-lib
 Architecture: all
 Depends: ${misc:Depends}
-Conflicts: w3c-dtd-xhtml
 Description: w3.org DTD and catalog files
  This package consists of all the definition files used by the 
  W3C Markup Validator. It consists of DTDs and modules, entity files
