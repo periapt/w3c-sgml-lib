@@ -5,12 +5,14 @@ w3c-sgml-lib (1.2-2) UNRELEASED; urgency=low
     conflicts with w3c-dtd-xhtml (Closes: #662091)
     - Removing broken links 
     - Removed legacy support
-    - Removed Provides clause for w3c-dtd-xhtml (Closes: 615125)
+    - Removed Provides clause for w3c-dtd-xhtml (Closes: #615125)
     - Moved directory to w3c-sgml-lib from xhtml
     - Added Breaks clauses for old w3c-markup-validator
   * Raised standards version to 3.9.3
     - Updated debian/copyright
   * Raised compat level and debhelper version to 8
+  * Added debian/generate_catalog_stuff.pl to build rules
+    to regnerate debian/xmlcatalogs
 
  -- Nicholas Bamber <nicholas@periapt.co.uk>  Sun, 11 Mar 2012 16:17:24 +0000
 

@@ -2,7 +2,8 @@ Source: w3c-sgml-lib
 Section: text
 Priority: optional
 Maintainer: Nicholas Bamber <nicholas@periapt.co.uk>
-Build-Depends: debhelper (>= 8), xml-core
+Build-Depends: debhelper (>= 8), xml-core, libreadonly-perl, libxml-libxml-perl,
+ libautodie-perl
 Standards-Version: 3.9.3
 Homepage: http://validator.w3.org/sgml-lib
 Vcs-Git: git://github.com/periapt/w3c-sgml-lib.git

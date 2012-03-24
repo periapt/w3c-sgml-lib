@@ -6,6 +6,10 @@ TMP  := $(CURDIR)/debian/$(PKG)
 %:
 	dh $@ 
 
+override_dh_auto_build:
+	dh_auto_build
+	$(CURDIR)/debian/generate_catalog_stuff.pl
+
 override_dh_install:
 	dh_install
 	dh_installxmlcatalogs
