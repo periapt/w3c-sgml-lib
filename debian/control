@@ -2,7 +2,7 @@ Source: w3c-sgml-lib
 Section: text
 Priority: optional
 Maintainer: Nicholas Bamber <nicholas@periapt.co.uk>
-Build-Depends: debhelper (>= 7.0.50~), xml-core
+Build-Depends: debhelper (>= 8), xml-core
 Standards-Version: 3.9.3
 Homepage: http://validator.w3.org/sgml-lib
 Vcs-Git: git://github.com/periapt/w3c-sgml-lib.git
@@ -11,6 +11,7 @@ Vcs-Browser: https://github.com/periapt/w3c-sgml-lib
 Package: w3c-sgml-lib
 Architecture: all
 Depends: ${misc:Depends}
+Breaks: w3c-markup-validator (<< 1.2+dfsg-6)
 Description: w3.org DTD and catalog files
  This package consists of all the definition files used by the 
  W3C Markup Validator. It consists of DTDs and modules, entity files
