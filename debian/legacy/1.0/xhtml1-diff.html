@@ -1,0 +1,1303 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org" />
+<title>XHTML 1.0: The Extensible HyperText Markup Language (Second Edition)</title>
+<link rel="stylesheet" type="text/css" media="screen" href="xhtml.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="W3C-REC.css" />
+<style type='text/css'>
+.diff-old-a {
+  font-size: smaller;
+  color: red;
+}
+
+.diff-old {
+  text-decoration: line-through;
+}
+
+.diff-new {
+    background-color: yellow;
+}
+
+.diff-chg {
+    background-color: lime;
+}
+
+</style>
+</head>
+<body>
+<div class="head"><a href="http://www.w3.org/"><img height="48" width="72" src="w3c_home.png" alt="W3C" /></a> 
+
+<h1><a name="title" id="title"></a> <span class="diff-chg">XHTML&trade; 1.0</span> The Extensible HyperText Markup Language <span class="diff-new">(Second Edition)</span></h1>
+
+<h2><a name="title2" id="title2"></a> A Reformulation of HTML 4 in XML 1.0</h2>
+
+<h2><a name="subtitle" id="subtitle"></a> W3C Recommendation 26 January <span class="diff-chg">2000, revised 1 August 2002</span></h2>
+
+<dl>
+<dt><a id="thisVersion" name="thisVersion">This <span class="diff-chg">version</span></a> :</dt>
+
+<dd><a href="http://www.w3.org/TR/2002/REC-xhtml1-20020801"><span class="diff-chg">http://www.w3.org/TR/2002/REC-xhtml1-20020801</span></a></dd>
+
+<dt>Latest version:</dt>
+
+<dd><a href="http://www.w3.org/TR/xhtml1">http://www.w3.org/TR/xhtml1</a></dd>
+
+<dt>Previous version:</dt>
+
+<dd><a href="http://www.w3.org/TR/2000/REC-xhtml1-20000126"><span class="diff-chg">http://www.w3.org/TR/2000/REC-xhtml1-20000126</span></a></dd>
+
+<dt><span class="diff-chg">Diff-marked version:</span></dt>
+
+<dd><a href="xhtml1-diff.html"><span class="diff-chg">http://www.w3.org/TR/2002/REC-xhtml1-20020801/xhtml1-diff.html</span></a></dd>
+
+<dt>Authors:</dt>
+
+<dd>See <a href="#acks"><span class="diff-chg">acknowledgments</span></a> .</dd>
+</dl>
+
+<p><span class="diff-new">Please refer to the</span> <a href="http://www.w3.org/2002/08/REC-xhtml1-20020801-errata"><strong><span class="diff-new">errata</span></strong></a> <span class="diff-new">
+for this document, which may include some normative corrections. See also</span> <a href="http://www.w3.org/MarkUp/translations"><strong><span class="diff-new">translations</span></strong></a> .</p>
+
+<p><span class="diff-new">This document is also available in these non-normative formats:</span> <a href="Cover.html"><span class="diff-new">Multi-part XHTML file</span></a> ,<a href=
+"xhtml1.ps"><span class="diff-new">PostScript version</span></a> ,<a href="xhtml1.pdf"><span class="diff-new">PDF version</span></a> ,<a href="xhtml1.zip"><span class="diff-new">ZIP
+archive</span></a> ,<span class="diff-new">and</span> <a href="xhtml1.tgz"><span class="diff-new">Gzip'd TAR archive</span></a> .</p>
+
+<p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Copyright">Copyright</a> <span class="diff-chg">&copy;2002</span> <a href="http://www.w3.org/"><abbr title="World 
+Wide Web Consortium">W3C</abbr></a> <sup><span class="diff-chg">&reg;</span></sup> ( <a href="http://www.lcs.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a> , <a href= 
+"http://www.inria.fr/"><abbr lang="fr" xml:lang="fr" title="Institut National de Recherche en Informatique et Automatique">INRIA</abbr></a> , <a href="http://www.keio.ac.jp/">Keio</a> ), All Rights
+Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Legal_Disclaimer">liability</a> , <a href="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#W3C_Trademarks">
+trademark</a> , <a href="http://www.w3.org/Consortium/Legal/copyright-documents-19990405">document use</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-software-19980720">software
+licensing</a> rules apply.</p>
+
+<hr />
+</div>
+
+<h2><a name="abstract" id="abstract"></a> Abstract</h2>
+
+<p>This specification defines <span class="diff-new">the Second Edition of</span> <abbr title="Extensible Hypertext Markup Language">XHTML</abbr> 1.0, a reformulation of <span class="diff-chg">
+HTML&nbsp;4</span> as an <abbr title="Extensible Markup Language">XML</abbr> 1.0 application, and three <abbr title="Document Type Definitions">DTDs</abbr> corresponding to the ones defined by <span
+class="diff-chg">HTML&nbsp;4.</span> The semantics of the elements and their attributes are defined in the W3C Recommendation for <span class="diff-chg">HTML&nbsp;4.</span> These semantics provide
+the foundation for future extensibility of XHTML. Compatibility with existing HTML user agents is possible by following a small set of guidelines.</p>
+
+<h2><a name="status" id="status"></a> Status of this document</h2>
+
+<p><em>This section describes the status of this document at the time of its publication. Other documents may supersede this document. The latest status of this document series is maintained at the
+W3C.</em></p>
+
+<p>This document <span class="diff-chg">is</span> the <span class="diff-chg">second edition of the XHTML 1.0 specification incorporating the errata changes</span> as <span class="diff-new">of 1
+August 2002. Changes between this version and the previous Recommendation are illustrated in</span> a <a href="xhtml1-diff.html"><span class="diff-chg">diff-marked version</span></a> .</p>
+
+<p><span class="diff-chg">This second edition</span> is <em><span class="diff-new">not</span></em> a <span class="diff-chg">new version of XHTML 1.0 (first published 26 January 2000). The changes in
+this</span> document <span class="diff-chg">reflect corrections applied</span> as <span class="diff-chg">a result of comments submitted by the community and</span> as a <span class="diff-chg">result
+of ongoing work within</span> the <span class="diff-chg">HTML Working Group. There are no substantive changes in this document - only</span> the <span class="diff-new">integration of various
+errata.</span></p>
+
+<p><span class="diff-new">The list of known errors in this</span> specification <span class="diff-chg">is available at</span> <a href="http://www.w3.org/2002/08/REC-xhtml1-20020801-errata"><span
+class="diff-chg">http://www.w3.org/2002/08/REC-xhtml1-20020801-errata</span></a> .</p>
+
+<p><span class="diff-chg">Please report errors in this document</span> to <a href="mailto:www-html-editor@w3.org"><span class="diff-chg">www-html-editor@w3.org</span></a> <span class="diff-chg">
+(</span> <a href="http://lists.w3.org/Archives/Public/www-html-editor/"><span class="diff-chg">archive</span></a> <span class="diff-chg">). Public discussion on</span> <abbr title="HyperText Markup 
+Language"><span class="diff-chg">HTML</span></abbr> <span class="diff-chg">features takes place on</span> the <span class="diff-chg">mailing list</span> <a href="mailto:www-html@w3.org"><span class= 
+"diff-chg">www-html@w3.org</span></a> <span class="diff-chg">(</span> <a href="http://lists.w3.org/Archives/Public/www-html/"><span class="diff-chg">archive</span></a> <span class="diff-chg">
+).</span></p>
+
+<p>This document has been produced as part of the <a href="http://www.w3.org/MarkUp/Activity">W3C HTML Activity</a> . The goals of the <a href="http://www.w3.org/MarkUp/Group/">HTML Working Group</a>
+<em>( <a href="http://cgi.w3.org/MemberAccess/">members only</a> )</em> are discussed in the <a href="http://www.w3.org/MarkUp/2000/Charter">HTML Working Group charter</a> .</p>
+
+<p><span class="diff-chg">At the time of publication, the working group believed there were zero patent disclosures relevant to this specification. A current list of patent disclosures relevant to
+this specification may be found on the Working Group's</span> <a href="http://www.w3.org/2002/07/HTML-IPR"><span class="diff-chg">patent disclosure page</span></a> .</p>
+
+<p>A list of current W3C Recommendations and other technical documents can be found at <a href="http://www.w3.org/TR">http://www.w3.org/TR</a> .</p>
+
+<h1><a name="toc" id="toc"></a> <span class="diff-chg">Quick Table</span> of <span class="diff-chg">Contents</span></h1>
+
+<div class="toc">
+<ul class='toc'>
+<li class='tocline'><span class="diff-chg">1.</span> <a href="#xhtml" class="tocxref"><span class="diff-chg">What</span> is <span class="diff-chg">XHTML?</span></a></li>
+
+<li class='tocline'><span class="diff-chg">2.</span> <a href="#defs" class="tocxref"><span class="diff-chg">Definitions</span></a></li>
+
+<li class='tocline'><span class="diff-chg">3.</span> <a href="#normative" class="tocxref"><span class="diff-chg">Normative Definition of XHTML 1.0</span></a></li>
+
+<li class='tocline'><span class="diff-chg">4.</span> <a href="#diffs" class="tocxref"><span class="diff-chg">Differences with HTML&nbsp;4</span></a></li>
+
+<li class='tocline'><span class="diff-chg">5.</span> <a href="#issues" class="tocxref"><span class="diff-chg">Compatibility Issues</span></a></li>
+
+<li class='tocline'><span class="diff-chg">A.</span> <a href="#dtds" class="tocxref"><span class="diff-chg">DTDs</span></a></li>
+
+<li class='tocline'><span class="diff-chg">B.</span> <a href="#prohibitions" class="tocxref"><span class="diff-chg">Element Prohibitions</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.</span> <a href="#guidelines" class="tocxref"><span class="diff-chg">HTML Compatibility Guidelines</span></a></li>
+
+<li class='tocline'><span class="diff-chg">D.</span> <a href="#acks" class="tocxref"><span class="diff-chg">Acknowledgements</span></a></li>
+
+<li class='tocline'><span class="diff-chg">E.</span> <a href="#refs" class="tocxref"><span class="diff-chg">References</span></a></li>
+</ul>
+</div>
+
+<h1><a name="contents" id="contents"></a><span class="diff-chg">Full Table of Contents</span></h1>
+
+<div class="toc">
+<ul class='toc'>
+<li class='tocline'>1. <a href="#xhtml" class="tocxref">What is XHTML?</a> 
+
+<ul class="toc">
+<li class='tocline'><span class="diff-chg">1.1.</span> <a href="#html4" class="tocxref">What is <span class="diff-chg">HTML&nbsp;4?</span></a></li>
+
+<li class='tocline'><span class="diff-chg">1.2.</span> <a href="#xml" class="tocxref">What is XML?</a></li>
+
+<li class='tocline'><span class="diff-chg">1.3.</span> <a href="#why" class="tocxref">Why the need for XHTML?</a></li>
+</ul>
+</li>
+
+<li class='tocline'>2. <a href="#defs" class="tocxref">Definitions</a> 
+
+<ul class="toc">
+<li class='tocline'><span class="diff-chg">2.1.</span> <a href="#terms" class="tocxref">Terminology</a></li>
+
+<li class='tocline'><span class="diff-chg">2.2.</span> <a href="#general" class="tocxref">General Terms</a></li>
+</ul>
+</li>
+
+<li class='tocline'>3. <a href="#normative" class="tocxref">Normative Definition of XHTML 1.0</a> 
+
+<ul class="toc">
+<li class='tocline'><span class="diff-chg">3.1.</span> <a href="#docconf" class="tocxref">Document Conformance</a> 
+
+<ul class="toc">
+<li class='tocline'><span class="diff-new">3.1.1.</span> <a href="#strict" class="tocxref"><span class="diff-new">Strictly Conforming Documents</span></a></li>
+
+<li class='tocline'><span class="diff-chg">3.1.2.</span> <a href="#well-formed" class="tocxref"><span class="diff-chg">Using XHTML with other namespaces</span></a></li>
+</ul>
+</li>
+
+<li class='tocline'><span class="diff-chg">3.2.</span> <a href="#uaconf" class="tocxref">User Agent Conformance</a></li>
+</ul>
+</li>
+
+<li class='tocline'>4. <a href="#diffs" class="tocxref">Differences with <span class="diff-chg">HTML&nbsp;4</span></a> 
+
+<ul class="toc">
+<li class='tocline'><span class="diff-new">4.1.</span> <a href="#h-4.1" class="tocxref"><span class="diff-new">Documents must be well-formed</span></a></li>
+
+<li class='tocline'><span class="diff-chg">4.2.</span> <a href="#h-4.2" class="tocxref"><span class="diff-chg">Element and attribute names must be in lower case</span></a></li>
+
+<li class='tocline'><span class="diff-chg">4.3.</span> <a href="#h-4.3" class="tocxref"><span class="diff-chg">For non-empty elements, end tags are required</span></a></li>
+
+<li class='tocline'><span class="diff-chg">4.4.</span> <a href="#h-4.4" class="tocxref"><span class="diff-chg">Attribute values must always be quoted</span></a></li>
+
+<li class='tocline'><span class="diff-chg">4.5.</span> <a href="#h-4.5" class="tocxref"><span class="diff-chg">Attribute Minimization</span></a></li>
+
+<li class='tocline'><span class="diff-chg">4.6.</span> <a href="#h-4.6" class="tocxref"><span class="diff-chg">Empty Elements</span></a></li>
+
+<li class='tocline'><span class="diff-chg">4.7.</span> <a href="#h-4.7" class="tocxref"><span class="diff-chg">White Space handling in attribute values</span></a></li>
+
+<li class='tocline'><span class="diff-chg">4.8.</span> <a href="#h-4.8" class="tocxref"><span class="diff-chg">Script and Style elements</span></a></li>
+
+<li class='tocline'><span class="diff-chg">4.9.</span> <a href="#h-4.9" class="tocxref"><span class="diff-chg">SGML exclusions</span></a></li>
+
+<li class='tocline'><span class="diff-chg">4.10.</span> <a href="#h-4.10" class="tocxref"><span class="diff-chg">The elements with 'id' and 'name' attributes</span></a></li>
+
+<li class='tocline'><span class="diff-chg">4.11.</span> <a href="#h-4.11" class="tocxref"><span class="diff-chg">Attributes with pre-defined value sets</span></a></li>
+
+<li class='tocline'><span class="diff-chg">4.12.</span> <a href="#h-4.12" class="tocxref"><span class="diff-chg">Entity references as hex values</span></a></li>
+</ul>
+</li>
+
+<li class='tocline'>5. <a href="#issues" class="tocxref">Compatibility Issues</a> 
+
+<ul class="toc">
+<li class='tocline'><span class="diff-chg">5.1.</span> <a href="#media" class="tocxref">Internet Media <span class="diff-chg">Type</span></a></li>
+</ul>
+</li>
+
+<li class='tocline'><span class="diff-chg">A.</span> <a href="#dtds" class="tocxref"><span class="diff-chg">DTDs</span></a> 
+
+<ul class="toc">
+<li class='tocline'><span class="diff-chg">A.1.</span> <a href="#h-A1" class="tocxref"><span class="diff-chg">Document Type Definitions</span></a> 
+
+<ul class="toc">
+<li class='tocline'><span class="diff-chg">A.1.1.</span> <a href="#a_dtd_XHTML-1.0-Strict" class="tocxref"><span class="diff-chg">XHTML-1.0-Strict</span></a></li>
+
+<li class='tocline'><span class="diff-chg">A.1.2.</span> <a href="#a_dtd_XHTML-1.0-Transitional" class="tocxref"><span class="diff-chg">XHTML-1.0-Transitional</span></a></li>
+
+<li class='tocline'><span class="diff-chg">A.1.3.</span> <a href="#a_dtd_XHTML-1.0-Frameset" class="tocxref"><span class="diff-chg">XHTML-1.0-Frameset</span></a></li>
+</ul>
+</li>
+
+<li class='tocline'><span class="diff-chg">A.2.</span> <a href="#h-A2" class="tocxref"><span class="diff-chg">Entity Sets</span></a> 
+
+<ul class="toc">
+<li class='tocline'><span class="diff-chg">A.2.1.</span> <a href="#a_dtd_Latin-1_characters" class="tocxref"><span class="diff-chg">Latin-1 characters</span></a></li>
+
+<li class='tocline'><span class="diff-chg">A.2.2.</span> <a href="#a_dtd_Special_characters" class="tocxref"><span class="diff-chg">Special characters</span></a></li>
+
+<li class='tocline'><span class="diff-chg">A.2.3.</span> <a href="#a_dtd_Symbols" class="tocxref"><span class="diff-chg">Symbols</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class='tocline'>B. <a href="#prohibitions" class="tocxref">Element Prohibitions</a></li>
+
+<li class='tocline'>C. <a href="#guidelines" class="tocxref">HTML Compatibility Guidelines</a> 
+
+<ul class="toc">
+<li class='tocline'><span class="diff-new">C.1.</span> <a href="#C_1" class="tocxref"><span class="diff-new">Processing Instructions and the XML Declaration</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.2.</span> <a href="#C_2" class="tocxref"><span class="diff-chg">Empty Elements</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.3.</span> <a href="#C_3" class="tocxref"><span class="diff-chg">Element Minimization and Empty Element Content</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.4.</span> <a href="#C_4" class="tocxref"><span class="diff-chg">Embedded Style Sheets and Scripts</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.5.</span> <a href="#C_5" class="tocxref"><span class="diff-chg">Line Breaks within Attribute Values</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.6.</span> <a href="#C_6" class="tocxref"><span class="diff-chg">Isindex</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.7.</span> <a href="#C_7" class="tocxref"><span class="diff-chg">The</span> <code><span class="diff-chg">lang</span></code> <span class="diff-chg">
+and</span> <code><span class="diff-chg">xml:lang</span></code> <span class="diff-chg">Attributes</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.8.</span> <a href="#C_8" class="tocxref"><span class="diff-chg">Fragment Identifiers</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.9.</span> <a href="#C_9" class="tocxref"><span class="diff-chg">Character Encoding</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.10.</span> <a href="#C_10" class="tocxref"><span class="diff-chg">Boolean Attributes</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.11.</span> <a href="#C_11" class="tocxref"><span class="diff-chg">Document Object Model and XHTML</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.12.</span> <a href="#C_12" class="tocxref"><span class="diff-chg">Using Ampersands in Attribute Values (and Elsewhere)</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.13.</span> <a href="#C_13" class="tocxref"><span class="diff-chg">Cascading Style Sheets (CSS) and XHTML</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.14.</span> <a href="#C_14" class="tocxref"><span class="diff-chg">Referencing Style Elements when serving as XML</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.15.</span> <a href="#C_15" class="tocxref"><span class="diff-chg">White Space Characters in HTML vs. XML</span></a></li>
+
+<li class='tocline'><span class="diff-chg">C.16.</span> <a href="#C_16" class="tocxref"><span class="diff-chg">The Named Character Reference &amp;apos;</span></a></li>
+</ul>
+</li>
+
+<li class='tocline'>D. <a href="#acks" class="tocxref">Acknowledgements</a></li>
+
+<li class='tocline'>E. <a href="#refs" class="tocxref">References</a></li>
+</ul>
+</div>
+
+<h1><a name="xhtml" id="xhtml">1.</a> What is XHTML?</h1>
+
+<p><strong><span class="diff-new">This section is informative.</span></strong></p>
+
+<p>XHTML is a family of current and future document types and modules that reproduce, subset, and extend <span class="diff-chg">HTML&nbsp;4 [</span> <a class="nref" href="#ref-html4"><span class= 
+"diff-chg">HTML4</span></a> <span class="diff-chg">].</span> XHTML family document types are <abbr title="Extensible Markup Language">XML</abbr> based, and ultimately are designed to work in
+conjunction with XML-based user agents. The details of this family and its evolution are discussed in more detail in <span class="diff-chg">[</span> <a class="nref" href="#ref-xhtmlmod"><span class= 
+"diff-chg">XHTMLMOD</span></a> <span class="diff-chg">].</span></p>
+
+<p>XHTML 1.0 (this specification) is the first document type in the XHTML family. It is a reformulation of the three <span class="diff-chg">HTML&nbsp;4</span> document types as applications of XML
+1.0 <span class="diff-chg">[</span> <a class="nref" href="#ref-xml"><span class="diff-chg">XML</span></a> <span class="diff-chg">].</span> It is intended to be used as a language for content that is
+both XML-conforming and, if some simple <a href="#guidelines">guidelines</a> are followed, operates in <span class="diff-chg">HTML&nbsp;4</span> conforming user agents. Developers who migrate their
+content to XHTML 1.0 will realize the following benefits:</p>
+
+<ul>
+<li>XHTML documents are XML conforming. As such, they are readily viewed, edited, and validated with standard XML tools.</li>
+
+<li>XHTML documents can be written to operate as well or better than they did before in existing <span class="diff-chg">HTML&nbsp;4-conforming</span> user agents as well as in new, XHTML 1.0
+conforming user agents.</li>
+
+<li>XHTML documents can utilize applications (e.g. scripts and applets) that rely upon either the HTML Document Object Model or the XML Document Object Model <span class="diff-chg">[</span> <a class= 
+"nref" href="#ref-dom"><span class="diff-chg">DOM</span></a> <span class="diff-chg">].</span></li>
+
+<li>As the XHTML family evolves, documents conforming to XHTML 1.0 will be more likely to interoperate within and among various XHTML environments.</li>
+</ul>
+
+<p>The XHTML family is the next step in the evolution of the Internet. By migrating to XHTML today, content developers can enter the XML world with all of its attendant benefits, while still
+remaining confident in their content's backward and future compatibility.</p>
+
+<h2><a name="html4" id="html4"><span class="diff-chg">1.1.</span></a> What is <span class="diff-chg">HTML&nbsp;4?</span></h2>
+
+<p>HTML 4 <span class="diff-chg">[</span> <a class="nref" href="#ref-html4"><span class="diff-chg">HTML4</span></a> <span class="diff-new">]</span> is an <abbr title="Standard Generalized Markup 
+Language">SGML</abbr> (Standard Generalized Markup Language) application conforming to International Standard <abbr title="Organization for International Standardization">ISO</abbr> 8879, and is
+widely regarded as the standard publishing language of the World Wide Web.</p>
+
+<p>SGML is a language for describing markup languages, particularly those used in electronic document exchange, document management, and document publishing. HTML is an example of a language defined
+in SGML.</p>
+
+<p>SGML has been around since the middle 1980's and has remained quite stable. Much of this stability stems from the fact that the language is both feature-rich and flexible. This flexibility,
+however, comes at a price, and that price is a level of complexity that has inhibited its adoption in a diversity of environments, including the World Wide Web.</p>
+
+<p>HTML, as originally conceived, was to be a language for the exchange of scientific and other technical documents, suitable for use by non-document specialists. HTML addressed the problem of SGML
+complexity by specifying a small set of structural and semantic tags suitable for authoring relatively simple documents. In addition to simplifying the document structure, HTML added support for
+hypertext. Multimedia capabilities were added later.</p>
+
+<p>In a remarkably short space of time, HTML became wildly popular and rapidly outgrew its original purpose. Since HTML's inception, there has been rapid invention of new elements for use within HTML
+(as a standard) and for adapting HTML to vertical, highly specialized, markets. This plethora of new elements has led to <span class="diff-chg">interoperability</span> problems for documents across
+different platforms.</p>
+
+<h2><a name="xml" id="xml"><span class="diff-chg">1.2.</span></a> What is XML?</h2>
+
+<p><span class="diff-chg">XML&trade;</span> is the shorthand <span class="diff-new">name</span> for Extensible Markup Language <span class="diff-chg">[</span> <a class="nref" href="#ref-xml"><span
+class="diff-chg">XML</span></a> <span class="diff-chg">].</span></p>
+
+<p>XML was conceived as a means of regaining the power and flexibility of SGML without most of its complexity. Although a restricted form of SGML, XML nonetheless preserves most of SGML's power and
+richness, and yet still retains all of SGML's commonly used features.</p>
+
+<p>While retaining these beneficial features, XML removes many of the more complex features of SGML that make the authoring and design of suitable software both difficult and costly.</p>
+
+<h2><a name="why" id="why"><span class="diff-chg">1.3.</span></a> Why the need for XHTML?</h2>
+
+<p>The benefits of migrating to XHTML 1.0 are described above. Some of the benefits of migrating to XHTML in general are:</p>
+
+<ul>
+<li>Document developers and user agent designers are constantly discovering new ways to express their ideas through new markup. In XML, it is relatively easy to introduce new elements or additional
+element attributes. The XHTML family is designed to accommodate these extensions through XHTML modules and techniques for developing new XHTML-conforming modules (described in the XHTML
+Modularization specification). These modules will permit the combination of existing and new feature sets when developing content and when designing new user agents.</li>
+
+<li>Alternate ways of accessing the Internet are constantly being introduced. The XHTML family is designed with general user agent interoperability in mind. Through a new user agent and document
+profiling mechanism, servers, proxies, and user agents will be able to perform best effort content transformation. Ultimately, it will be possible to develop XHTML-conforming content that is usable
+by any XHTML-conforming user agent.</li>
+</ul>
+
+<h1><a name="defs" id="defs">2.</a> <span class="diff-chg">Definitions</span></h1>
+
+<p><strong><span class="diff-new">This section is normative.</span></strong></p>
+
+<h2><a name="terms" id="terms"><span class="diff-chg">2.1.</span></a> <span class="diff-chg">Terminology</span></h2>
+
+<p>The following terms are used in this specification. These terms extend the definitions in <span class="diff-chg">[</span> <a class="nref" href="#ref-rfc2119"><span class="diff-chg">
+RFC2119</span></a> <span class="diff-new">]</span> in ways based upon similar definitions in ISO/ <abbr title="International Electro-technical Commission">IEC</abbr> 9945-1:1990 <span class=
+"diff-chg">[</span> <a class="nref" href="#ref-posix.1"><span class="diff-chg">POSIX.1</span></a> <span class="diff-chg">]:</span></p>
+
+<dl>
+<dt>May</dt>
+
+<dd>With respect to implementations, the word "may" is to be interpreted as an optional feature that is not required in this specification but can be provided. With respect to <a href="#docconf">
+Document Conformance</a> , the word "may" means that the optional feature must not be used. The term "optional" has the same definition as "may".</dd>
+
+<dt>Must</dt>
+
+<dd>In this specification, the word "must" is to be interpreted as a mandatory requirement on the implementation or on Strictly Conforming XHTML Documents, depending upon the context. The term
+"shall" has the same definition as "must".</dd>
+
+<dt><span class="diff-new">Optional</span></dt>
+
+<dd><span class="diff-new">See "May".</span></dd>
+
+<dt>Reserved</dt>
+
+<dd>A value or behavior is unspecified, but it is not allowed to be used by Conforming Documents nor to be supported by Conforming User Agents.</dd>
+
+<dt><span class="diff-new">Shall</span></dt>
+
+<dd><span class="diff-new">See "Must".</span></dd>
+
+<dt>Should</dt>
+
+<dd>With respect to implementations, the word "should" is to be interpreted as an implementation recommendation, but not a requirement. With respect to documents, the word "should" is to be
+interpreted as recommended programming practice for documents and a requirement for Strictly Conforming XHTML Documents.</dd>
+
+<dt>Supported</dt>
+
+<dd>Certain facilities in this specification are optional. If a facility is supported, it behaves as specified by this specification.</dd>
+
+<dt>Unspecified</dt>
+
+<dd>When a value or behavior is unspecified, the specification defines no portability requirements for a facility on an implementation even when faced with a document that uses the facility. A
+document that requires specific behavior in such an instance, rather than tolerating any behavior when using that facility, is not a Strictly Conforming XHTML Document.</dd>
+</dl>
+
+<h2><a name="general" id="general"><span class="diff-chg">2.2.</span></a> General Terms</h2>
+
+<dl>
+<dt>Attribute</dt>
+
+<dd>An attribute is a parameter to an element declared in the DTD. An attribute's type and value range, including a possible default value, are defined in the DTD.</dd>
+
+<dt>DTD</dt>
+
+<dd>A DTD, or document type definition, is a collection of XML <span class="diff-new">markup</span> declarations that, as a collection, defines the legal structure, <span class="term">elements</span>
+, and <span class="term">attributes</span> that are available for use in a document that complies to the DTD.</dd>
+
+<dt>Document</dt>
+
+<dd>A document is a stream of data that, after being combined with any other streams it references, is structured such that it holds information contained within <span class="term">elements</span>
+that are organized as defined in the associated <span class="term">DTD</span> . See <a href="#docconf">Document Conformance</a> for more information.</dd>
+
+<dt>Element</dt>
+
+<dd>An element is a document structuring unit declared in the <span class="term">DTD</span> . The element's content model is defined in the <span class="term">DTD</span> , and additional semantics
+may be defined in the prose description of the element.</dd>
+
+<dt><a name="facilities" id="facilities">Facilities</a></dt>
+
+<dd><span class="diff-chg">Facilities are</span> <span class="term">elements</span> , <span class="term">attributes</span> , and the semantics associated with those <span class="term">elements</span>
+and <span class="term">attributes</span> .</dd>
+
+<dt>Implementation</dt>
+
+<dd>See User <span class="diff-chg">Agent.</span></dd>
+
+<dt>Parsing</dt>
+
+<dd>Parsing is the act whereby a <span class="term">document</span> is scanned, and the information contained within the <span class="term">document</span> is filtered into the context of the <span
+class="term">elements</span> in which the information is structured.</dd>
+
+<dt>Rendering</dt>
+
+<dd>Rendering is the act whereby the information in a <span class="term">document</span> is presented. This presentation is done in the form most appropriate to the environment (e.g. aurally,
+visually, in print).</dd>
+
+<dt>User Agent</dt>
+
+<dd>A user agent is <span class="diff-chg">a system</span> that processes XHTML <span class="diff-chg">documents in accordance with this specification.</span> See <a href="#uaconf">User Agent
+Conformance</a> for more information.</dd>
+
+<dt>Validation</dt>
+
+<dd>Validation is a process whereby <span class="term">documents</span> are verified against the associated <span class="term">DTD</span> , ensuring that the structure, use of <span class="term">
+elements</span> , and use of <span class="term">attributes</span> are consistent with the definitions in the <span class="term">DTD</span> .</dd>
+
+<dt><a name="wellformed" id="wellformed">Well-formed</a></dt>
+
+<dd>A <span class="term">document</span> is well-formed when it is structured according to the rules defined in <a href="http://www.w3.org/TR/REC-xml#sec-well-formed">Section 2.1</a> of the XML 1.0
+Recommendation <span class="diff-chg">[</span> <a class="nref" href="#ref-xml"><span class="diff-chg">XML</span></a> <span class="diff-chg">].</span></dd>
+</dl>
+
+<h1><a name="normative" id="normative">3.</a> Normative Definition of XHTML 1.0</h1>
+
+<p><strong><span class="diff-new">This section is normative.</span></strong></p>
+
+<h2><a name="docconf" id="docconf"><span class="diff-chg">3.1.</span></a> Document Conformance</h2>
+
+<p>This version of XHTML provides a definition of strictly conforming XHTML <span class="diff-new">1.0</span> documents, which are restricted to <span class="diff-chg">elements</span> and attributes
+from the <span class="diff-new">XML and</span> XHTML <span class="diff-chg">1.0 namespaces.</span> See <a href="#well-formed">Section 3.1.2</a> for information on using XHTML with other namespaces,
+for instance, to include metadata expressed in <abbr title="Resource Description Format">RDF</abbr> within XHTML documents.</p>
+
+<h3><a name="strict" id="strict"><span class="diff-chg">3.1.1.</span></a> Strictly Conforming Documents</h3>
+
+<p>A Strictly Conforming XHTML Document is <span class="diff-chg">an XML</span> document that requires only the facilities described as mandatory in this specification. Such a document must meet all
+of the following criteria:</p>
+
+<ol>
+<li>
+<p>It must <span class="diff-chg">conform to the constraints expressed in</span> one of the three DTDs found in <a href="#dtds"><span class="diff-chg">DTDs</span></a> <span class="diff-chg">and
+in</span> <a href="#prohibitions"><span class="diff-chg">Appendix B</span></a> .</p>
+</li>
+
+<li>
+<p>The root element of the document must be <code><span class="diff-chg">html</span></code> .</p>
+</li>
+
+<li>
+<p>The root element of the document must <span class="diff-chg">contain an</span> <code>xmlns</code> <span class="diff-chg">declaration for the XHTML namespace [</span> <a class="nref" href= 
+"#ref-xmlns"><span class="diff-chg">XMLNS</span></a> <span class="diff-chg">].</span> The namespace for XHTML is defined to be <code>http://www.w3.org/1999/xhtml</code> . <span class="diff-new">An
+example root element might look like:</span></p>
+
+<div class="good">
+<pre>
+<span class="diff-new">&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+</span>
+</pre>
+</div>
+</li>
+
+<li>
+<p>There must be a DOCTYPE declaration in the document prior to the root element. The public identifier included in the DOCTYPE declaration must reference one of the three DTDs found in <a href=
+"#dtds"><span class="diff-chg">DTDs</span></a> using the respective Formal Public Identifier. The system identifier may be changed to reflect local system conventions.</p>
+
+<pre>
+&lt;!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+<span class="diff-chg">     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+</span>
+&lt;!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+<span class="diff-chg">     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+</span>
+&lt;!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+<span class="diff-chg">     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;
+</span>
+</pre>
+</li>
+
+<li>
+<p><span class="diff-chg">The DTD subset must not be used to override any parameter entities</span> in the <span class="diff-chg">DTD.</span></p>
+</li>
+</ol>
+
+<p>An XML declaration is not required in all XML <span class="diff-chg">documents; however</span> XHTML document authors are strongly encouraged to use XML declarations in all their documents. Such a
+declaration is required when the character encoding of the document is other than the default UTF-8 or <span class="diff-chg">UTF-16 and no encoding was determined by a higher-level protocol. Here is
+an example of an XHTML document. In this example, the XML declaration is included.</span></p>
+
+<div class="good">
+<pre>
+<span class="diff-new">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Virtual Library&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Moved to &lt;a href="http://example.org/"&gt;example.org&lt;/a&gt;.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</span>
+</pre>
+</div>
+
+<h3><a name="well-formed" id="well-formed"><span class="diff-chg">3.1.2.</span></a> Using XHTML with other namespaces</h3>
+
+<p>The XHTML namespace may be used with other XML namespaces as per <span class="diff-chg">[</span> <a class="nref" href="#ref-xmlns"><span class="diff-chg">XMLNS</span></a> <span class="diff-chg">
+],</span> although such documents are not strictly conforming XHTML 1.0 documents as defined above. <span class="diff-chg">Work</span> by W3C <span class="diff-chg">is addressing</span> ways to
+specify conformance for documents involving multiple namespaces. <span class="diff-new">For an example, see [</span> <a class="nref" href="#ref-xhtml-mathml"><span class="diff-new">
+XHTML+MathML</span></a> <span class="diff-new">].</span></p>
+
+<p>The following example shows the way in which XHTML 1.0 could be used in conjunction with the MathML Recommendation:</p>
+
+<div class="good">
+<pre>
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;A Math Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;The following is MathML markup:&lt;/p&gt;
+    &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+      &lt;apply&gt; &lt;log/&gt;
+        &lt;logbase&gt;
+          &lt;cn&gt; 3 &lt;/cn&gt;
+        &lt;/logbase&gt;
+        &lt;ci&gt; x &lt;/ci&gt;
+      &lt;/apply&gt;
+    &lt;/math&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+<p>The following example shows the way in which XHTML 1.0 markup could be incorporated into another XML namespace:</p>
+
+<div class="good">
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!-- initially, the default namespace is "books" --&gt;
+&lt;book xmlns='urn:loc.gov:books'
+    xmlns:isbn='urn:ISBN:0-395-36341-6' xml:lang="en" lang="en"&gt;
+  &lt;title&gt;Cheaper by the Dozen&lt;/title&gt;
+  &lt;isbn:number&gt;1568491379&lt;/isbn:number&gt;
+  &lt;notes&gt;
+    &lt;!-- make HTML the default namespace for a hypertext commentary --&gt;
+    &lt;p xmlns='http://www.w3.org/1999/xhtml'&gt;
+        This is also available &lt;a href="http://www.w3.org/"&gt;online&lt;/a&gt;.
+    &lt;/p&gt;
+  &lt;/notes&gt;
+&lt;/book&gt;
+</pre>
+</div>
+
+<h2><a name="uaconf" id="uaconf"><span class="diff-chg">3.2.</span></a> User Agent Conformance</h2>
+
+<p>A conforming user agent must meet all of the following criteria:</p>
+
+<ol>
+<li>In order to be consistent with the XML 1.0 Recommendation <span class="diff-chg">[</span> <a class="nref" href="#ref-xml"><span class="diff-chg">XML</span></a> <span class="diff-chg">],</span>
+the user agent must parse and evaluate an XHTML document for well-formedness. If the user agent claims to be a validating user agent, it must also validate documents against their referenced DTDs
+according to <span class="diff-chg">[</span> <a class="nref" href="#ref-xml"><span class="diff-chg">XML</span></a> <span class="diff-chg">].</span></li>
+
+<li>When the user agent claims to support <a href="#facilities">facilities</a> defined within this specification or required by this specification through normative reference, it must do so in ways
+consistent with the facilities' definition.</li>
+
+<li>When a user agent processes an XHTML document as generic XML, it shall only recognize attributes of type <code>ID</code> <span class="diff-chg">(i.e.</span> the <code>id</code> attribute on most
+XHTML elements) as fragment identifiers.</li>
+
+<li>If a user agent encounters an element it does not recognize, it must <span class="diff-chg">process</span> the element's content.</li>
+
+<li>If a user agent encounters an attribute it does not recognize, it must ignore the entire attribute specification (i.e., the attribute and its value).</li>
+
+<li>If a user agent encounters an attribute value it <span class="diff-chg">does not</span> recognize, it must use the default attribute value.</li>
+
+<li>If it encounters an entity reference (other than one of the <span class="diff-chg">entities defined in this recommendation or in the XML recommendation)</span> for which the <span class=
+"diff-chg">user agent</span> has processed no declaration (which could happen if the declaration is in the external subset which the <span class="diff-chg">user agent</span> hasn't read), the entity
+reference should be <span class="diff-chg">processed</span> as the characters (starting with the ampersand and ending with the semi-colon) that make up the entity reference.</li>
+
+<li>When <span class="diff-chg">processing</span> content, <span class="diff-chg">user agents</span> that encounter characters or character entity references that are recognized but not renderable
+<span class="diff-chg">may substitute another rendering that gives the same meaning, or must</span> display the document in such a way that it is obvious to the user that normal rendering has not
+taken place.</li>
+
+<li>
+<p><span class="diff-new">White space is handled according to the following rules.</span> The following characters are defined in <span class="diff-chg">[</span> <a class="nref" href="#ref-xml"><span
+class="diff-chg">XML</span></a> <span class="diff-chg">] white space</span> characters:</p>
+
+<ul>
+<li><span class="diff-chg">SPACE</span> (&amp;#x0020;)</li>
+
+<li><span class="diff-chg">HORIZONTAL TABULATION</span> (&amp;#x0009;)</li>
+
+<li><span class="diff-chg">CARRIAGE RETURN</span> (&amp;#x000D;)</li>
+
+<li><span class="diff-chg">LINE FEED</span> (&amp;#x000A;)</li>
+</ul>
+
+<p>The XML processor normalizes different <span class="diff-chg">systems'</span> line end codes into one single <span class="diff-chg">LINE FEED</span> character, that is passed up to the
+application.</p>
+
+<p><span class="diff-chg">The</span> user agent must <span class="diff-chg">use</span> the <span class="diff-chg">definition from CSS for processing</span> whitespace <span class="diff-chg">
+characters [</span> <a class="nref" href="#ref-css2"><span class="diff-chg">CSS2</span></a> <span class="diff-chg">].</span> <em><span class="diff-chg">Note that</span> the <span class="diff-chg">
+CSS2 recommendation does</span> not <span class="diff-chg">explicitly address the issue</span> of whitespace <span class="diff-chg">handling in non-Latin character sets. This will</span> be <span
+class="diff-chg">addressed in</span> a <span class="diff-chg">future version</span> of <span class="diff-chg">CSS, at which time this reference will</span> be <span class="diff-chg">
+updated.</span></em></p>
+</li>
+</ol>
+
+<p><span class="diff-chg">Note that</span> in <span class="diff-chg">order</span> to <span class="diff-new">produce a Canonical XHTML document,</span> the <span class="diff-chg">rules above
+must</span> be <span class="diff-chg">applied and</span> the <span class="diff-chg">rules</span> in <span class="diff-chg">[</span> <a class="nref" href="#ref-xmlc14n"><span class="diff-chg">
+XMLC14N</span></a> <span class="diff-chg">] must</span> also <span class="diff-chg">be applied</span> to the <span class="diff-chg">document.</span></p>
+
+<h1><a name="diffs" id="diffs">4.</a> Differences with <span class="diff-chg">HTML&nbsp;4</span></h1>
+
+<p><strong><span class="diff-new">This section is informative.</span></strong></p>
+
+<p>Due to the fact that XHTML is an XML application, certain practices that were perfectly legal in SGML-based <span class="diff-chg">HTML&nbsp;4 [</span> <a class="nref" href="#ref-html4"><span
+class="diff-chg">HTML4</span></a> <span class="diff-new">]</span> must be changed.</p>
+
+<h2><a name="h-4.1" id="h-4.1"><span class="diff-chg">4.1.</span></a> Documents must be well-formed</h2>
+
+<p><a href="#wellformed">Well-formedness</a> is a new concept introduced by <span class="diff-chg">[</span> <a class="nref" href="#ref-xml"><span class="diff-chg">XML</span></a> <span class=
+"diff-chg">].</span> Essentially this means that all elements must either have closing tags or be written in a special form (as described below), and that all the elements must <span class=
+"diff-chg">nest properly.</span></p>
+
+<p>Although overlapping is illegal in SGML, it <span class="diff-chg">is</span> widely tolerated in existing browsers.</p>
+
+<p><strong><em>CORRECT: nested elements.</em></strong></p>
+
+<div class="good">
+<p>&lt;p&gt;here is an emphasized &lt;em&gt;paragraph&lt;/em&gt;.&lt;/p&gt;</p>
+</div>
+
+<p><strong><em>INCORRECT: overlapping elements</em></strong></p>
+
+<div class="bad">
+<p>&lt;p&gt;here is an emphasized &lt;em&gt;paragraph.&lt;/p&gt;&lt;/em&gt;</p>
+</div>
+
+<h2><a name="h-4.2" id="h-4.2"><span class="diff-chg">4.2.</span></a> Element and attribute names must be in lower case</h2>
+
+<p>XHTML documents must use lower case for all HTML element and attribute names. This difference is necessary because XML is case-sensitive e.g. &lt;li&gt; and &lt;LI&gt; are different tags.</p>
+
+<h2><a name="h-4.3" id="h-4.3"><span class="diff-chg">4.3.</span></a> For non-empty elements, end tags are required</h2>
+
+<p>In SGML-based HTML 4 certain elements were permitted to omit the end tag; with the elements that followed implying closure. <span class="diff-chg">XML does</span> not <span class="diff-chg">allow
+end tags to be omitted.</span> All elements other than those declared in the DTD as <code>EMPTY</code> must have an end tag. <span class="diff-new">Elements that are declared in the DTD as</span>
+<code><span class="diff-new">EMPTY</span></code> <span class="diff-new">can have an end tag</span> <em><span class="diff-new">or</span></em> <span class="diff-new">can use empty element shorthand
+(see</span> <a href="#h-4.6"><span class="diff-new">Empty Elements</span></a> <span class="diff-new">).</span></p>
+
+<p><strong><em>CORRECT: terminated elements</em></strong></p>
+
+<div class="good">
+<p>&lt;p&gt;here is a paragraph.&lt;/p&gt;&lt;p&gt;here is another paragraph.&lt;/p&gt;</p>
+</div>
+
+<p><strong><em>INCORRECT: unterminated elements</em></strong></p>
+
+<div class="bad">
+<p>&lt;p&gt;here is a paragraph.&lt;p&gt;here is another paragraph.</p>
+</div>
+
+<h2><a name="h-4.4" id="h-4.4"><span class="diff-chg">4.4.</span></a> Attribute values must always be quoted</h2>
+
+<p>All attribute values must be quoted, even those which appear to be numeric.</p>
+
+<p><strong><em>CORRECT: quoted attribute values</em></strong></p>
+
+<div class="good">
+<p><span class="diff-chg">&lt;td rowspan="3"&gt;</span></p>
+</div>
+
+<p><strong><em>INCORRECT: unquoted attribute values</em></strong></p>
+
+<div class="bad">
+<p><span class="diff-chg">&lt;td rowspan=3&gt;</span></p>
+</div>
+
+<h2><a name="h-4.5" id="h-4.5"><span class="diff-chg">4.5.</span></a> Attribute Minimization</h2>
+
+<p>XML does not support attribute minimization. Attribute-value pairs must be written in full. Attribute names such as <code>compact</code> and <code>checked</code> cannot occur in elements without
+their value being specified.</p>
+
+<p><strong><em>CORRECT: unminimized attributes</em></strong></p>
+
+<div class="good">
+<p>&lt;dl compact="compact"&gt;</p>
+</div>
+
+<p><strong><em>INCORRECT: minimized attributes</em></strong></p>
+
+<div class="bad">
+<p>&lt;dl compact&gt;</p>
+</div>
+
+<h2><a name="h-4.6" id="h-4.6"><span class="diff-chg">4.6.</span></a> Empty Elements</h2>
+
+<p>Empty elements must either have an end tag or the start tag must end with <code>/&gt;</code> . For instance, <code>&lt;br/&gt;</code> or <code>&lt;hr&gt;&lt;/hr&gt;</code> . See <a href= 
+"#guidelines">HTML Compatibility Guidelines</a> for information on ways to ensure this is backward compatible with HTML 4 user agents.</p>
+
+<p><strong><em>CORRECT: terminated empty <span class="diff-chg">elements</span></em></strong></p>
+
+<div class="good">
+<p>&lt;br/&gt;&lt;hr/&gt;</p>
+</div>
+
+<p><strong><em>INCORRECT: unterminated empty <span class="diff-chg">elements</span></em></strong></p>
+
+<div class="bad">
+<p>&lt;br&gt;&lt;hr&gt;</p>
+</div>
+
+<h2><a name="h-4.7" id="h-4.7"><span class="diff-chg">4.7.</span></a> <span class="diff-chg">White Space</span> handling in attribute values</h2>
+
+<p><span class="diff-chg">When</span> user agents <span class="diff-chg">process attributes, they do so according to</span> <a href="http://www.w3.org/TR/REC-xml#AVNormalize"><span class="diff-chg">
+Section 3.3.3</span></a> <span class="diff-chg">of [</span> <a class="nref" href="#ref-xml"><span class="diff-chg">XML</span></a> <span class="diff-chg">]:</span></p>
+
+<ul>
+<li><span class="diff-chg">Strip</span> leading and trailing <span class="diff-chg">white space.</span></li>
+
+<li><span class="diff-chg">Map</span> sequences of one or more <span class="diff-chg">white space</span> characters (including line breaks) to a single inter-word <span class="diff-chg">
+space.</span></li>
+</ul>
+
+<h2><a name="h-4.8" id="h-4.8"><span class="diff-chg">4.8.</span></a> Script and Style elements</h2>
+
+<p>In XHTML, the script and style elements are declared as having <code>#PCDATA</code> content. As a result, <code>&lt;</code> and <code>&amp;</code> will be treated as the start of markup, and
+entities such as <code>&amp;lt;</code> and <code>&amp;amp;</code> will be recognized as entity references by the XML processor to <code>&lt;</code> and <code>&amp;</code> respectively. Wrapping the
+content of the script or style element within a <code>CDATA</code> marked section avoids the expansion of these entities.</p>
+
+<div class="good">
+<pre>
+<span class="diff-chg">&lt;script type="text/javascript"&gt;
+&lt;![CDATA[
+... unescaped script content ...
+]]&gt;
+&lt;/script&gt;
+</span>
+</pre>
+</div>
+
+<p><code>CDATA</code> sections are recognized by the XML processor and appear as nodes in the Document Object Model, see <a href=
+"http://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html#ID-E067D597">Section 1.3</a> of the DOM Level 1 Recommendation <span class="diff-chg">[</span> <a class="nref" href="#ref-dom"><span class= 
+"diff-chg">DOM</span></a> <span class="diff-chg">].</span></p>
+
+<p>An alternative is to use external script and style documents.</p>
+
+<h2><a name="h-4.9" id="h-4.9"><span class="diff-chg">4.9.</span></a> SGML exclusions</h2>
+
+<p>SGML gives the writer of a DTD the ability to exclude specific elements from being contained within an element. Such prohibitions (called "exclusions") are not possible in XML.</p>
+
+<p>For example, the HTML 4 Strict DTD forbids the nesting of an ' <code>a</code> ' element within another ' <code>a</code> ' element to any descendant depth. It is not possible to spell out such
+prohibitions in XML. Even though these prohibitions cannot be defined in the DTD, certain elements should not be nested. A summary of such elements and the elements that should not be nested in them
+is found in the normative <a href="#prohibitions"><span class="diff-chg">Element Prohibitions</span></a> .</p>
+
+<h2><a name="h-4.10" id="h-4.10"><span class="diff-chg">4.10.</span></a> The elements with 'id' and 'name' attributes</h2>
+
+<p>HTML 4 defined the <code>name</code> attribute for the elements <code>a</code> , <code>applet</code> , <code>form</code> , <code>frame</code> , <code>iframe</code> , <code>img</code> , and <code>
+map</code> . HTML 4 also introduced the <code>id</code> attribute. Both of these attributes are designed to be used as fragment identifiers.</p>
+
+<p>In XML, fragment identifiers are of type <code>ID</code> , and there can only be a single attribute of type <code>ID</code> per element. Therefore, in XHTML 1.0 the <code>id</code> attribute is
+defined to be of type <code>ID</code> . In order to ensure that XHTML 1.0 documents are well-structured XML documents, XHTML 1.0 documents MUST use the <code>id</code> attribute when defining
+fragment <span class="diff-chg">identifiers</span> on <span class="diff-new">the</span> elements <span class="diff-chg">listed above.</span> See the <a href="#guidelines">HTML Compatibility
+Guidelines</a> for information on ensuring such anchors are <span class="diff-chg">backward</span> compatible when serving XHTML documents as media type <code>text/html</code> .</p>
+
+<p>Note that in XHTML 1.0, the <code>name</code> attribute of these elements is formally deprecated, and will be removed in a subsequent version of XHTML.</p>
+
+<h2><a name="h-4.11" id="h-4.11"><span class="diff-new">4.11.</span></a> <span class="diff-new">Attributes with pre-defined value sets</span></h2>
+
+<p><span class="diff-new">HTML 4 and XHTML both have some attributes that have pre-defined and limited sets of values (e.g. the</span> <code><span class="diff-new">type</span></code> <span class= 
+"diff-new">attribute of the</span> <code><span class="diff-new">input</span></code> <span class="diff-new">element). In SGML and XML, these are called</span> <em><span class="diff-new">enumerated
+attributes</span></em> .<span class="diff-new">Under HTML 4, the interpretation of these values was</span> <em><span class="diff-new">case-insensitive</span></em> ,<span class="diff-new">so a value
+of</span> <code><span class="diff-new">TEXT</span></code> <span class="diff-new">was equivalent to a value of</span> <code><span class="diff-new">text</span></code> .<span class="diff-new">Under XML,
+the interpretation of these values is</span> <em><span class="diff-new">case-sensitive</span></em> ,<span class="diff-new">and in XHTML 1 all of these values are defined in lower-case.</span></p>
+
+<h2><a name="h-4.12" id="h-4.12"><span class="diff-new">4.12.</span></a> <span class="diff-new">Entity references as hex values</span></h2>
+
+<p><span class="diff-new">SGML and XML both permit references to characters by using hexadecimal values. In SGML these references could be made using either &amp;#Xnn; or &amp;#xnn;. In XML
+documents, you must use the lower-case version (i.e. &amp;#xnn;)</span></p>
+
+<h1><a name="issues" id="issues">5.</a> Compatibility Issues</h1>
+
+<p><strong><span class="diff-new">This section is normative.</span></strong></p>
+
+<p>Although there is no requirement for XHTML 1.0 documents to be compatible with existing user agents, in practice this is easy to accomplish. Guidelines for creating compatible documents can be
+found in <a href="#guidelines">Appendix&nbsp;C</a> .</p>
+
+<h2><a name="media" id="media"><span class="diff-chg">5.1.</span></a> Internet Media Type</h2>
+
+<p>XHTML Documents which follow the guidelines set forth in <a href="#guidelines">Appendix C</a> , "HTML Compatibility Guidelines" may be labeled with the Internet Media Type <span class="diff-chg">
+"text/html" [</span> <a class="nref" href="#ref-rfc2854"><span class="diff-chg">RFC2854</span></a> <span class="diff-chg">],</span> as they are compatible with most HTML browsers. <span class= 
+"diff-chg">Those documents, and any</span> other document <span class="diff-chg">conforming</span> to <span class="diff-chg">this specification,</span> may <span class="diff-chg">also</span> be <span
+class="diff-chg">labeled</span> with the <span class="diff-chg">Internet Media Type "application/xhtml+xml" as defined</span> in <span class="diff-chg">[</span> <a class="nref" href="#ref-rfc3236">
+<span class="diff-chg">RFC3236</span></a> <span class="diff-chg">].</span> For <span class="diff-chg">further information on</span> using <span class="diff-chg">media types with XHTML, see</span> the
+<span class="diff-chg">informative note [</span> <a class="nref" href="#ref-xhtmlmime"><span class="diff-chg">XHTMLMIME</span></a> <span class="diff-chg">].</span></p>
+
+<h1><a name="dtds" id="dtds">A.</a> <span class="diff-chg">DTDs</span></h1>
+
+<p><strong>This appendix is normative.</strong></p>
+
+<p>These DTDs and entity sets form a normative part of this specification. The complete set of DTD files together with an XML declaration and SGML Open Catalog is included in the <a href=
+"xhtml1.zip">zip file</a> <span class="diff-new">and the</span> <a href="xhtml1.tgz"><span class="diff-new">gzip'd tar file</span></a> for this specification. <span class="diff-new">Users looking for
+local copies of the DTDs to work with should download and use those archives rather than using the specific DTDs referenced below.</span></p>
+
+<h2><a name="h-A1" id="h-A1"><span class="diff-chg">A.1.</span></a> Document Type Definitions</h2>
+
+<p>These DTDs approximate the HTML 4 DTDs. <span class="diff-chg">The W3C recommends</span> that <span class="diff-new">you use the authoritative versions of these DTDs at their defined SYSTEM
+identifiers</span> when <span class="diff-new">validating content. If you need to use these DTDs locally you should download one of the archives of</span> <a href="Overview.html#thisVersion"><span
+class="diff-new">this version</span></a> .<span class="diff-new">For completeness, the normative versions of</span> the DTDs are <span class="diff-chg">included here:</span></p>
+
+<h3><a name="a_dtd_XHTML-1.0-Strict" id="a_dtd_XHTML-1.0-Strict"><span class="diff-chg">A.1.1.</span></a> XHTML-1.0-Strict</h3>
+
+<p><span class="diff-new">The file</span> <a href="DTD/xhtml1-strict.dtd"><span class="diff-new">DTD/xhtml1-strict.dtd</span></a> <span class="diff-chg">is a normative part of this specification. The
+annotated contents of this file are available in this</span> <a href="./dtds.html#a_dtd_XHTML-1.0-Strict"><span class="diff-chg">separate section</span></a> <span class="diff-chg">for
+completeness.</span></p>
+
+<h3><a name="a_dtd_XHTML-1.0-Transitional" id="a_dtd_XHTML-1.0-Transitional"><span class="diff-chg">A.1.2.</span></a> XHTML-1.0-Transitional</h3>
+
+<p><span class="diff-new">The file</span> <a href="DTD/xhtml1-transitional.dtd"><span class="diff-new">DTD/xhtml1-transitional.dtd</span></a> <span class="diff-chg">is a normative part of this
+specification. The annotated contents of this file are available in this</span> <a href="./dtds.html#a_dtd_XHTML-1.0-Transitional"><span class="diff-chg">separate section</span></a> <span class= 
+"diff-chg">for completeness.</span></p>
+
+<h3><a name="a_dtd_XHTML-1.0-Frameset" id="a_dtd_XHTML-1.0-Frameset"><span class="diff-chg">A.1.3.</span></a> XHTML-1.0-Frameset</h3>
+
+<p><span class="diff-new">The file</span> <a href="DTD/xhtml1-frameset.dtd"><span class="diff-new">DTD/xhtml1-frameset.dtd</span></a> <span class="diff-chg">is a normative part of this specification.
+The annotated contents of this file are available in this</span> <a href="./dtds.html#a_dtd_XHTML-1.0-Frameset"><span class="diff-chg">separate section</span></a> <span class="diff-chg">for
+completeness.</span></p>
+
+<h2><a name="h-A2" id="h-A2"><span class="diff-chg">A.2.</span></a> Entity Sets</h2>
+
+<p>The XHTML entity sets are the same as for HTML 4, but have been modified to be valid XML 1.0 entity declarations. Note the entity for the Euro currency sign ( <code>&amp;euro;</code> or <code>
+&amp;#8364;</code> or <code>&amp;#x20AC;</code> ) is defined as part of the special characters.</p>
+
+<h3><a name="a_dtd_Latin-1_characters" id="a_dtd_Latin-1_characters"><span class="diff-chg">A.2.1.</span></a> Latin-1 characters</h3>
+
+<p><span class="diff-new">The file</span> <a href="DTD/xhtml-lat1.ent"><span class="diff-new">DTD/xhtml-lat1.ent</span></a> <span class="diff-chg">is a normative part of this specification. The
+annotated contents of this file are available in this</span> <a href="./dtds.html#a_dtd_Latin-1_characters"><span class="diff-chg">separate section</span></a> <span class="diff-chg">for
+completeness.</span></p>
+
+<h3><a name="a_dtd_Special_characters" id="a_dtd_Special_characters"><span class="diff-chg">A.2.2.</span></a> Special characters</h3>
+
+<p><span class="diff-new">The file</span> <a href="DTD/xhtml-special.ent"><span class="diff-new">DTD/xhtml-special.ent</span></a> <span class="diff-chg">is a normative part of this specification. The
+annotated contents of this file are available in this</span> <a href="./dtds.html#a_dtd_Special_characters"><span class="diff-chg">separate section</span></a> <span class="diff-chg">for
+completeness.</span></p>
+
+<h3><a name="a_dtd_Symbols" id="a_dtd_Symbols"><span class="diff-chg">A.2.3.</span></a> Symbols</h3>
+
+<p><span class="diff-new">The file</span> <a href="DTD/xhtml-symbol.ent"><span class="diff-new">DTD/xhtml-symbol.ent</span></a> <span class="diff-chg">is a normative part of this specification. The
+annotated contents of this file are available in this</span> <a href="./dtds.html#a_dtd_Symbols"><span class="diff-chg">separate section</span></a> <span class="diff-chg">for completeness.</span></p>
+
+<h1><a name="prohibitions" id="prohibitions">B.</a> Element Prohibitions</h1>
+
+<p><strong>This appendix is normative.</strong></p>
+
+<p>The following elements have prohibitions on which elements they can contain (see <a href="#h-4.9"><span class="diff-chg">SGML Exclusions</span></a> ). This prohibition applies to all depths of
+nesting, i.e. it contains all the descendant elements.</p>
+
+<dl>
+<dt><code class="tag">a</code></dt>
+
+<dd><span class="diff-chg">must not</span> contain other <code>a</code> elements.</dd>
+
+<dt><code class="tag">pre</code></dt>
+
+<dd><span class="diff-chg">must not</span> contain the <code>img</code> , <code>object</code> , <code>big</code> , <code>small</code> , <code>sub</code> , or <code>sup</code> elements.</dd>
+
+<dt><code class="tag">button</code></dt>
+
+<dd><span class="diff-chg">must not</span> contain the <code>input</code> , <code>select</code> , <code>textarea</code> , <code>label</code> , <code>button</code> , <code>form</code> , <code>
+fieldset</code> , <code>iframe</code> or <code>isindex</code> elements.</dd>
+
+<dt><code class="tag">label</code></dt>
+
+<dd><span class="diff-chg">must not</span> contain other <code class="tag">label</code> elements.</dd>
+
+<dt><code class="tag">form</code></dt>
+
+<dd><span class="diff-chg">must not</span> contain other <code>form</code> elements.</dd>
+</dl>
+
+<h1><a name="guidelines" id="guidelines">C.</a> HTML Compatibility Guidelines</h1>
+
+<p><strong>This appendix is informative.</strong></p>
+
+<p>This appendix summarizes design guidelines for authors who wish their XHTML documents to render on existing HTML user agents. <em><span class="diff-new">Note that this recommendation does not
+define how HTML conforming user agents should process HTML documents. Nor does it define the meaning of the Internet Media Type</span> <code><span class="diff-new">text/html</span></code> .<span
+class="diff-new">For these definitions, see [</span> <a class="nref" href="#ref-html4"><span class="diff-new">HTML4</span></a> <span class="diff-new">] and [</span> <a class="nref" href=
+"#ref-rfc2854"><span class="diff-new">RFC2854</span></a> <span class="diff-new">] respectively.</span></em></p>
+
+<h2><a name="C_1" id="C_1"><span class="diff-chg">C.1.</span></a> Processing Instructions <span class="diff-new">and the XML Declaration</span></h2>
+
+<p>Be aware that processing instructions are rendered on some user agents. <span class="diff-chg">Also, some user agents interpret the XML declaration to mean that the document is unrecognized XML
+rather than HTML, and therefore may not render the document as expected. For compatibility with these types of legacy browsers, you may want to avoid using processing instructions and XML
+declarations. Remember, however,</span> that when the XML declaration is not included in a document, the document can only use the default character encodings UTF-8 or UTF-16.</p>
+
+<h2><a name="C_2" id="C_2"><span class="diff-chg">C.2.</span></a> Empty Elements</h2>
+
+<p>Include a space before the trailing <code>/</code> and <code>&gt;</code> of empty elements, e.g. <code class="greenmono">&lt;br&nbsp;/&gt;</code> , <code class="greenmono">&lt;hr&nbsp;/&gt;</code>
+and <code class="greenmono">&lt;img src="karen.jpg" alt="Karen"&nbsp;/&gt;</code> . Also, use the minimized tag syntax for empty elements, e.g. <code class="greenmono">&lt;br /&gt;</code> , as the
+alternative syntax <code class="greenmono">&lt;br&gt;&lt;/br&gt;</code> allowed by XML gives uncertain results in many existing user agents.</p>
+
+<h2><a name="C_3" id="C_3"><span class="diff-chg">C.3.</span></a> Element Minimization and Empty Element Content</h2>
+
+<p>Given an empty instance of an element whose content model is not <code>EMPTY</code> (for example, an empty title or paragraph) do not use the minimized form (e.g. use <code class="greenmono">
+&lt;p&gt; &lt;/p&gt;</code> and not <code class="greenmono">&lt;p&nbsp;/&gt;</code> ).</p>
+
+<h2><a name="C_4" id="C_4"><span class="diff-chg">C.4.</span></a> Embedded Style Sheets and Scripts</h2>
+
+<p>Use external style sheets if your style sheet uses <code>&lt;</code> or <code>&amp;</code> or <code>]]&gt;</code> or <code>--</code> . Use external scripts if your script uses <code>&lt;</code> or
+<code>&amp;</code> or <code>]]&gt;</code> or <code>--</code> . Note that XML parsers are permitted to silently remove the contents of comments. Therefore, the historical practice of "hiding" scripts
+and style sheets within <span class="diff-chg">"comments"</span> to make the documents backward compatible is likely to not work as expected in XML-based <span class="diff-chg">user
+agents.</span></p>
+
+<h2><a name="C_5" id="C_5"><span class="diff-chg">C.5.</span></a> Line Breaks within Attribute Values</h2>
+
+<p>Avoid line breaks and multiple <span class="diff-chg">white space</span> characters within attribute values. These are handled inconsistently by user agents.</p>
+
+<h2><a name="C_6" id="C_6"><span class="diff-chg">C.6.</span></a> Isindex</h2>
+
+<p>Don't include more than one <code>isindex</code> element in the document <code>head</code> . The <code>isindex</code> element is deprecated in favor of the <code>input</code> element.</p>
+
+<h2><a name="C_7" id="C_7"><span class="diff-chg">C.7.</span></a> The <code>lang</code> and <code>xml:lang</code> Attributes</h2>
+
+<p>Use both the <code>lang</code> and <code>xml:lang</code> attributes when specifying the language of an element. The value of the <code>xml:lang</code> attribute takes precedence.</p>
+
+<h2><a name="C_8" id="C_8"><span class="diff-chg">C.8.</span></a> Fragment Identifiers</h2>
+
+<p>In XML, <abbr title="Uniform Resource Identifiers"><span class="diff-chg">URI</span></abbr> <span class="diff-new">-references</span> [ <a class="nref" href="#ref-rfc2396">RFC2396</a> ] that end
+with fragment identifiers of the form <code>"#foo"</code> do not refer to elements with an attribute <code>name="foo"</code> ; rather, they refer to elements with an attribute defined to be of type
+<code>ID</code> , e.g., the <code>id</code> attribute in HTML 4. Many existing HTML clients don't support the use of <code>ID</code> -type attributes in this way, so identical values may be supplied
+for both of these attributes to ensure maximum forward and backward compatibility (e.g., <code class="greenmono">&lt;a id="foo" name="foo"&gt;...&lt;/a&gt;</code> ).</p>
+
+<p>Further, since the set of legal values for attributes of type <code>ID</code> is much smaller than for those of type <code>CDATA</code> , the type of the <code>name</code> attribute has been
+changed to <code>NMTOKEN</code> . This attribute is constrained such that it can only have the same values as type <code>ID</code> , or as the <code>Name</code> production in XML 1.0 Section <span
+class="diff-chg">2.3,</span> production 5. Unfortunately, this constraint cannot be expressed in the XHTML 1.0 DTDs. Because of this change, care must be taken when converting existing HTML
+documents. The values of these attributes must be unique within the document, valid, and any references to these fragment identifiers (both internal and external) must be updated should the values be
+changed during conversion.</p>
+
+<p><span class="diff-new">Note that the collection of legal values in XML 1.0 Section 2.3, production 5 is much larger than that permitted to be used in the</span> <code><span class="diff-new">
+ID</span></code> <span class="diff-new">and</span> <code><span class="diff-new">NAME</span></code> <span class="diff-new">types defined in HTML 4. When defining fragment identifiers to be
+backward-compatible, only strings matching the pattern</span> <code><span class="diff-new">[A-Za-z][A-Za-z0-9:_.-]*</span></code> <span class="diff-new">should be used. See</span> <a href= 
+"http://www.w3.org/TR/html4/types.html#h-6.2"><span class="diff-new">Section 6.2</span></a> <span class="diff-new">of [</span> <a class="nref" href="#ref-html4"><span class="diff-new">
+HTML4</span></a> <span class="diff-new">] for more information.</span></p>
+
+<p>Finally, note that XHTML 1.0 has deprecated the <code>name</code> attribute of the <code>a</code> , <code>applet</code> , <code>form</code> , <code>frame</code> , <code>iframe</code> , <code>
+img</code> , and <code>map</code> elements, and it will be removed from XHTML in subsequent versions.</p>
+
+<h2><a name="C_9" id="C_9"><span class="diff-chg">C.9.</span></a> Character Encoding</h2>
+
+<p><span class="diff-chg">Historically, the</span> character encoding <span class="diff-new">of an HTML document is either specified by a web server via the charset parameter of the HTTP Content-Type
+header, or via a</span> <code><span class="diff-new">meta</span></code> <span class="diff-new">element</span> in the <span class="diff-new">document itself. In an XML</span> document, the <span
+class="diff-new">character</span> encoding <span class="diff-chg">of the document is specified</span> on the <span class="diff-chg">XML</span> declaration <span class="diff-chg">(e.g.,</span> <code
+class="greenmono">&lt;?xml version="1.0" encoding="EUC-JP"?&gt;</code> <span class="diff-chg">). In order to portably present documents with specific character encodings, the best approach is to
+ensure that the web server provides the correct headers. If this is not possible, a document that wants to set its character encoding explicitly must include both the XML declaration an encoding
+declaration</span> and a <code>meta</code> http-equiv statement <span class="diff-chg">(e.g.,</span> <code class="greenmono">&lt;meta http-equiv="Content-type" <span class="diff-chg">
+content="text/html; charset=EUC-JP"&nbsp;/&gt;</span></code> ). <span class="diff-chg">In XHTML-conforming user agents, the</span> value of the encoding <span class="diff-chg">declaration</span> of
+the <span class="diff-chg">XML declaration</span> takes precedence.</p>
+
+<p><span class="diff-new">Note: be aware that if a document must include the character encoding declaration in a meta http-equiv statement, that document may always be interpreted by HTTP servers
+and/or user agents as being of the internet media type defined in that statement. If a document is to be served as multiple media types, the HTTP server must be used to set the encoding of the
+document.</span></p>
+
+<h2><a name="C_10" id="C_10"><span class="diff-chg">C.10.</span></a> Boolean Attributes</h2>
+
+<p>Some HTML user agents are unable to interpret boolean attributes when these appear in their full (non-minimized) form, as required by XML 1.0. Note this problem doesn't affect user agents
+compliant with HTML 4. The following attributes are involved: <code>compact</code> , <code>nowrap</code> , <code>ismap</code> , <code>declare</code> , <code>noshade</code> , <code>checked</code> ,
+<code>disabled</code> , <code>readonly</code> , <code>multiple</code> , <code>selected</code> , <code>noresize</code> , <code>defer</code> .</p>
+
+<h2><a name="C_11" id="C_11"><span class="diff-chg">C.11.</span></a> Document Object Model and XHTML</h2>
+
+<p>The Document Object Model level 1 Recommendation [ <a class="nref" href="#ref-dom">DOM</a> ] defines document object model interfaces for XML and HTML 4. The HTML 4 document object model specifies
+that HTML element and attribute names are returned in upper-case. The XML document object model specifies that element and attribute names are returned in the case they are specified. In XHTML 1.0,
+elements and attributes are specified in lower-case. This apparent difference can be addressed in two ways:</p>
+
+<ol>
+<li><span class="diff-chg">User agents</span> that access XHTML documents served as Internet media type <code>text/html</code> via the <abbr title="Document Object Model">DOM</abbr> can use the HTML
+DOM, and can rely upon element and attribute names being returned in upper-case from those interfaces.</li>
+
+<li><span class="diff-chg">User agents</span> that access XHTML documents served as Internet media types <code>text/xml</code> , <code>application/xml</code> , <span class="diff-new">or</span> <code>
+<span class="diff-new">application/xhtml+xml</span></code> can also use the XML DOM. Elements and attributes will be returned in lower-case. Also, some XHTML elements may or may not appear in the
+object tree because they are optional in the content model (e.g. the <code>tbody</code> element within <code>table</code> ). This occurs because in HTML 4 some elements were permitted to be minimized
+such that their start and end tags are both omitted (an SGML feature). This is not possible in XML. Rather than require document authors to insert extraneous elements, XHTML has made the elements
+optional. <span class="diff-chg">User agents</span> need to adapt to this accordingly. <span class="diff-new">For further information on this topic, see [</span> <a class="nref" href="#ref-dom2">
+<span class="diff-new">DOM2</span></a> <span class="diff-new">]</span></li>
+</ol>
+
+<h2><a name="C_12" id="C_12"><span class="diff-chg">C.12.</span></a> Using Ampersands in Attribute Values <span class="diff-new">(and Elsewhere)</span></h2>
+
+<p><span class="diff-chg">In both SGML and XML, the ampersand character ("&amp;") declares the beginning of</span> an <span class="diff-chg">entity reference (e.g., &amp;reg; for the registered
+trademark symbol "&reg;"). Unfortunately, many HTML user agents have silently ignored incorrect usage of the ampersand character in HTML documents - treating ampersands that do not look like entity
+references as literal ampersands. XML-based user agents will not tolerate this incorrect usage, and any document that uses</span> an <span class="diff-chg">ampersand incorrectly will not be "valid",
+and consequently will not conform to this specification. In order to ensure that documents are compatible with historical HTML user agents and XML-based user agents, ampersands used in a document
+that are to be treated as literal characters</span> must be expressed <span class="diff-new">themselves</span> as <span class="diff-chg">an</span> entity reference (e.g. " <code>&amp;amp;</code> ").
+For example, when the <code>href</code> attribute of the <code>a</code> element refers to a CGI script that takes parameters, it must be expressed as <code>
+http://my.site.dom/cgi-bin/myscript.pl?class=guest&amp;amp;name=user</code> rather than as <code>http://my.site.dom/cgi-bin/myscript.pl?class=guest&amp;name=user</code> .</p>
+
+<h2><a name="C_13" id="C_13"><span class="diff-chg">C.13.</span></a> Cascading Style Sheets (CSS) and XHTML</h2>
+
+<p>The Cascading Style Sheets level 2 Recommendation [ <a class="nref" href="#ref-css2">CSS2</a> ] defines style properties which are applied to the parse tree of the HTML or XML <span class=
+"diff-chg">documents.</span> Differences in parsing will produce different visual or aural results, depending on the selectors used. The following hints will reduce this effect for documents which
+are served without modification as both media types:</p>
+
+<ol>
+<li>CSS style sheets for XHTML should use lower case element and attribute names.</li>
+
+<li>In tables, the tbody element will be inferred by the parser of an HTML user agent, but not by the parser of an XML user agent. Therefore you should always explicitly add a tbody element if it is
+referred to in a CSS selector.</li>
+
+<li>Within the XHTML <span class="diff-chg">namespace,</span> user agents are expected to recognize the "id" attribute as an attribute of type ID. Therefore, style sheets should be able to continue
+using the shorthand "#" selector syntax even if the user agent does not read the DTD.</li>
+
+<li>Within the XHTML <span class="diff-chg">namespace,</span> user agents are expected to recognize the "class" attribute. Therefore, style sheets should be able to continue using the shorthand "."
+selector syntax.</li>
+
+<li>CSS defines different conformance rules for HTML and XML documents; be aware that the HTML rules apply to XHTML documents delivered as HTML and the XML rules apply to XHTML documents delivered as
+XML.</li>
+</ol>
+
+<h2><a name="C_14" id="C_14"><span class="diff-new">C.14.</span></a> <span class="diff-new">Referencing Style Elements when serving as XML</span></h2>
+
+<p><span class="diff-new">In HTML 4 and XHTML, the</span> <code><span class="diff-new">style</span></code> <span class="diff-new">element can be used to define document-internal style rules. In XML,
+an XML stylesheet declaration is used to define style rules. In order to be compatible with this convention,</span> <code><span class="diff-new">style</span></code> <span class="diff-new">elements
+should have their fragment identifier set using the</span> <code><span class="diff-new">id</span></code> <span class="diff-new">attribute, and an XML stylesheet declaration should reference this
+fragment. For example:</span></p>
+
+<div class="good">
+<pre>
+<span class="diff-new">&lt;?xml-stylesheet href="W3C-REC.css" type="text/css"?&gt;
+&lt;?xml-stylesheet href="#internalStyle" type="text/css"?&gt;
+&lt;!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+&lt;head&gt;
+&lt;title&gt;An internal stylesheet example&lt;/title&gt;
+&lt;style type="text/css" id="internalStyle"&gt;
+  code {
+    color: green;
+    font-family: monospace;
+    font-weight: bold;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;
+  This is text that uses our 
+  &lt;code&gt;internal stylesheet&lt;/code&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</span>
+</pre>
+</div>
+
+<h2><a name="C_15" id="C_15"><span class="diff-new">C.15.</span></a> <span class="diff-new">White Space Characters in HTML vs. XML</span></h2>
+
+<p><span class="diff-new">Some characters that are legal in HTML documents, are illegal in XML document. For example, in HTML, the Formfeed character (U+000C) is treated as white space, in XHTML, due
+to XML's definition of characters, it is illegal.</span></p>
+
+<h2><a name="C_16" id="C_16"><span class="diff-new">C.16.</span></a> <span class="diff-new">The Named Character Reference &amp;apos;</span></h2>
+
+<p><span class="diff-new">The named character reference</span> <code><span class="diff-new">&amp;apos;</span></code> <span class="diff-new">(the apostrophe, U+0027) was introduced in XML 1.0 but does
+not appear in HTML. Authors should therefore use</span> <code><span class="diff-new">&amp;#39;</span></code> <span class="diff-new">instead of</span> <code><span class="diff-new">
+&amp;apos;</span></code> <span class="diff-new">to work as expected in HTML 4 user agents.</span></p>
+
+<h1><a name="acks" id="acks">D.</a> <span class="diff-chg">Acknowledgements</span></h1>
+
+<p><strong>This appendix is informative.</strong></p>
+
+<p>This specification was written with the participation of the members of the W3C HTML <span class="diff-chg">Working Group.</span></p>
+
+<p><span class="diff-chg">At publication of the second edition, the membership was:</span></p>
+
+<dl>
+<dd><span class="diff-chg">Steven Pemberton, CWI/W3C (HTML Working Group Chair)</span><br />
+<span class="diff-chg">Daniel Austin, Grainger</span><br />
+<span class="diff-chg">Jonny Axelsson, Opera Software</span><br />
+<span class="diff-chg">Tantek &Ccedil;elik, Microsoft</span><br />
+<span class="diff-chg">Doug Dominiak, Openwave Systems</span><br />
+<span class="diff-chg">Herman Elenbaas, Philips Electronics</span><br />
+<span class="diff-chg">Beth Epperson, Netscape/</span> <acronym title="America Online"><span class="diff-chg">AOL</span></acronym><br />
+<span class="diff-chg">Masayasu Ishikawa, W3C (HTML Activity Lead)</span><br />
+<span class="diff-chg">Shin'ichi Matsui, Panasonic</span><br />
+<span class="diff-chg">Shane McCarron, Applied Testing and Technology</span><br />
+<span class="diff-chg">Ann Navarro, WebGeek,</span> <abbr title="Incorporated"><span class="diff-chg">Inc.</span></abbr><br />
+<span class="diff-chg">Subramanian Peruvemba, Oracle</span><br />
+<span class="diff-chg">Rob Relyea, Microsoft</span><br />
+<span class="diff-chg">Sebastian Schnitzenbaumer, SAP</span><br />
+<span class="diff-chg">Peter Stark, Sony Ericsson</span><br />
+</dd>
+</dl>
+
+<p><span class="diff-chg">At publication of the first edition, the membership was:</span></p>
+
+<dl>
+<dd>Steven Pemberton, <acronym title="Centrum voor Wiskunde en Informatica" lang="nl" xml:lang="nl">CWI</acronym> (HTML Working Group Chair)<br />
+Murray Altheim, Sun Microsystems<br />
+Daniel Austin, AskJeeves (CNET: The Computer Network through July 1999)<br />
+Frank Boumphrey, HTML Writers Guild<br />
+John Burger, Mitre<br />
+Andrew W. Donoho, IBM<br />
+Sam Dooley, IBM<br />
+Klaus Hofrichter, GMD<br />
+Philipp Hoschka, W3C<br />
+Masayasu Ishikawa, W3C<br />
+Warner ten Kate, Philips Electronics<br />
+Peter King, Phone.com<br />
+Paula Klante, JetForm<br />
+Shin'ichi Matsui, Panasonic (W3C visiting engineer through September 1999)<br />
+Shane McCarron, Applied Testing and Technology (The Open Group through August 1999)<br />
+Ann Navarro, HTML Writers Guild<br />
+Zach Nies, Quark<br />
+Dave Raggett, W3C/HP <span class="diff-chg">(HTML Activity Lead)</span><br />
+Patrick Schmitz, Microsoft<br />
+Sebastian Schnitzenbaumer, Stack Overflow<br />
+Peter Stark, Phone.com<br />
+Chris Wilson, Microsoft<br />
+Ted Wugofski, Gateway 2000<br />
+Dan Zigmond, WebTV Networks</dd>
+</dl>
+
+<h1><a name="refs" id="refs">E.</a> <span class="diff-chg">References</span></h1>
+
+<p><strong>This appendix is informative.</strong></p>
+
+<dl>
+<dt><a name="ref-css2" id="ref-css2"><strong>[CSS2]</strong></a></dt>
+
+<dd><span class="diff-new">"</span> <cite><a href="http://www.w3.org/TR/1998/REC-CSS2-19980512"><span class="diff-chg">Cascading</span> Style Sheets, level 2 (CSS2) <span class="diff-chg">
+Specification</span></a></cite> <span class="diff-chg">",</span> B. Bos, H. W. Lie, C. Lilley, I. Jacobs, 12 May 1998.<br />
+<a href="http://www.w3.org/TR/REC-CSS2">Latest version</a> available at: http://www.w3.org/TR/REC-CSS2</dd>
+
+<dt><a name="ref-dom" id="ref-dom"><strong>[DOM]</strong></a></dt>
+
+<dd><span class="diff-new">"</span> <cite><a href="http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001"><span class="diff-chg">Document</span> Object Model (DOM) Level 1 <span class="diff-chg">
+Specification</span></a></cite> <span class="diff-chg">",</span> Lauren Wood <em lang="lt" xml:lang="lt">et al.</em> , 1 October 1998.<br />
+<a href="http://www.w3.org/TR/REC-DOM-Level-1">Latest version</a> available at: http://www.w3.org/TR/REC-DOM-Level-1</dd>
+
+<dt><a name="ref-dom2" id="ref-dom2"><strong><span class="diff-new">[DOM2]</span></strong></a></dt>
+
+<dd><span class="diff-new">"</span> <cite><a href="http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113"><span class="diff-new">Document Object Model (DOM) Level 2 Core
+Specification</span></a></cite> <span class="diff-new">", A. Le&nbsp;Hors,</span> <em lang="lt" xml:lang="lt"><span class="diff-new">et al.</span></em> ,<span class="diff-new">13 November
+2000.</span><br />
+<a href="http://www.w3.org/TR/DOM-Level-2-Core"><span class="diff-new">Latest version</span></a> <span class="diff-new">available at: http://www.w3.org/TR/DOM-Level-2-Core</span></dd>
+
+<dt><a name="ref-html4" id="ref-html4"><strong>[HTML]</strong></a></dt>
+
+<dd><span class="diff-new">"</span> <cite><a href="http://www.w3.org/TR/1999/REC-html401-19991224"><span class="diff-chg">HTML</span> 4.01 <span class="diff-chg">Specification</span></a></cite> <span
+class="diff-chg">",</span> D. Raggett, A. Le&nbsp;Hors, I. Jacobs, 24 December 1999.<br />
+<a href="http://www.w3.org/TR/html401">Latest version</a> available at: http://www.w3.org/TR/html401</dd>
+
+<dt><a name="ref-posix.1" id="ref-posix.1"><strong>[POSIX.1]</strong></a></dt>
+
+<dd><span class="diff-chg">"</span> <cite><span class="diff-chg">ISO/IEC</span> 9945-1:1990 Information Technology - Portable Operating System Interface (POSIX) - Part 1: System Application Program
+Interface (API) [C <span class="diff-chg">Language]</span></cite> <span class="diff-chg">",</span> Institute of Electrical and Electronics Engineers, Inc, 1990.</dd>
+
+<dt><a id="ref-rfc2045" name="ref-rfc2045"><strong><span class="diff-new">[RFC2045]</span></strong></a></dt>
+
+<dd><span class="diff-new">"</span> <cite><a href="http://www.ietf.org/rfc/rfc2045.txt"><span class="diff-new">Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message
+Bodies</span></a></cite> <span class="diff-new">", N. Freed and N. Borenstein, November 1996. Note that this RFC obsoletes RFC1521, RFC1522, and RFC1590.</span></dd>
+
+<dt><a name="ref-rfc2046" id="ref-rfc2046"><strong>[RFC2046]</strong></a></dt>
+
+<dd><span class="diff-new">"</span> <cite><a href="http://www.ietf.org/rfc/rfc2046.txt"><span class="diff-chg">RFC2046:</span> Multipurpose Internet Mail Extensions (MIME) Part Two: Media <span
+class="diff-chg">Types</span></a></cite> <span class="diff-chg">",</span> N. Freed and N. Borenstein, November 1996.<br />
+Available at <a href="http://www.ietf.org/rfc/rfc2046.txt">http://www.ietf.org/rfc/rfc2046.txt</a> . Note that this RFC obsoletes RFC1521, RFC1522, and RFC1590.</dd>
+
+<dt><a name="ref-rfc2119" id="ref-rfc2119"><strong>[RFC2119]</strong></a></dt>
+
+<dd><span class="diff-new">"</span> <cite><a href="http://www.ietf.org/rfc/rfc2119.txt"><span class="diff-chg">RFC2119:</span> Key words for use in RFCs to Indicate Requirement <span class=
+"diff-chg">Levels</span></a></cite> <span class="diff-chg">",</span> S. Bradner, March 1997.<br />
+Available at: http://www.ietf.org/rfc/rfc2119.txt</dd>
+
+<dt><a name="ref-rfc2376" id="ref-rfc2376"><strong>[RFC2376]</strong></a></dt>
+
+<dd><span class="diff-new">"</span> <cite><a href="http://www.ietf.org/rfc/rfc2376.txt"><span class="diff-chg">RFC2376:</span> XML Media <span class="diff-chg">Types</span></a></cite> <span class= 
+"diff-chg">",</span> E. Whitehead, M. Murata, July 1998.<br />
+<span class="diff-new">This document is obsoleted by [</span> <a href="#ref-rfc3023"><span class="diff-new">RFC3023</span></a> <span class="diff-new">].</span><br />
+Available at: http://www.ietf.org/rfc/rfc2376.txt</dd>
+
+<dt><a name="ref-rfc2396" id="ref-rfc2396"><strong>[RFC2396]</strong></a></dt>
+
+<dd><span class="diff-new">"</span> <cite><a href="http://www.ietf.org/rfc/rfc2396.txt"><span class="diff-chg">RFC2396:</span> Uniform Resource Identifiers (URI): Generic <span class="diff-chg">
+Syntax</span></a></cite> <span class="diff-chg">",</span> T. Berners-Lee, R. Fielding, L. Masinter, August 1998.<br />
+This document updates RFC1738 and RFC1808.<br />
+Available at: http://www.ietf.org/rfc/rfc2396.txt</dd>
+
+<dt><a name="ref-rfc2854" id="ref-rfc2854"><strong><span class="diff-new">[RFC2854]</span></strong></a></dt>
+
+<dd><span class="diff-new">"</span> <cite><a href="http://www.ietf.org/rfc/rfc2854.txt"><span class="diff-new">RFC2854: The text/html Media Type</span></a></cite> <span class="diff-new">", D.
+Conolly, L. Masinter, June 2000.</span><br />
+<span class="diff-new">Available at: http://www.ietf.org/rfc/rfc2854.txt</span></dd>
+
+<dt><a name="ref-rfc3023" id="ref-rfc3023"><strong><span class="diff-new">[RFC3023]</span></strong></a></dt>
+
+<dd><span class="diff-new">"</span> <cite><a href="http://www.ietf.org/rfc/rfc3023.txt"><span class="diff-new">RFC3023: XML Media Types</span></a></cite> <span class="diff-new">", M. Murata, S.
+St.Laurent, D. Kohn, January 2001.</span><br />
+<span class="diff-new">This document obsoletes [</span> <a href="#ref-rfc2376"><span class="diff-new">RFC2376</span></a> <span class="diff-new">].</span><br />
+<span class="diff-new">Available at: http://www.ietf.org/rfc/rfc3023.txt</span></dd>
+
+<dt><a id="ref-rfc3066" name="ref-rfc3066"><strong><span class="diff-new">[RFC3066]</span></strong></a></dt>
+
+<dd><span class="diff-new">"</span> <a href="http://www.ietf.org/rfc/rfc3066.txt"><span class="diff-new">Tags for the Identification of Languages</span></a> <span class="diff-new">", H. Alvestrand,
+January 2001.</span><br />
+<span class="diff-new">Available at: http://www.ietf.org/rfc/rfc3066.txt</span></dd>
+
+<dt><a id="ref-rfc3236" name="ref-rfc3236"><strong><span class="diff-new">[RFC3236]</span></strong></a></dt>
+
+<dd><span class="diff-new">"</span> <a href="http://www.ietf.org/rfc/rfc3236.txt"><span class="diff-new">The 'application/xhtml+xml' Media Type</span></a> <span class="diff-new">", M. Baker, P.
+Stark, January 2002.</span><br />
+<span class="diff-new">Available at: http://www.ietf.org/rfc/rfc3236.txt</span></dd>
+
+<dt><a id="ref-xhtml-mathml" name="ref-xhtml-mathml"><strong><span class="diff-new">[XHTML+MathML]</span></strong></a></dt>
+
+<dd><cite><span class="diff-new">"</span> <a href="http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd"><span class="diff-new">XHTML plus Math 1.1</span> <abbr title="Document Type Definition"><span
+class="diff-new">DTD</span></abbr></a></cite> <span class="diff-new">", "A.2 MathML as a DTD Module", Mathematical Markup Language (MathML) Version 2.0. Available at:
+http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd</span></dd>
+
+<dt><a id="ref-xhtmlmime" name="ref-xhtmlmime"><strong><span class="diff-new">[XHTMLMIME]</span></strong></a></dt>
+
+<dd><span class="diff-new">"</span> <cite><a href="http://www.w3.org/TR/2002/NOTE-xhtml-media-types-20020801"><span class="diff-new">XHTML Media Types</span></a></cite> <span class="diff-new">",
+Masayasu Ishikawa, 1 August 2002.</span><br />
+<a href="http://www.w3.org/TR/xhtml-media-types"><span class="diff-new">Latest version</span></a> <span class="diff-new">available at: http://www.w3.org/TR/xhtml-media-types</span></dd>
+
+<dt><a id="ref-xhtmlmod" name="ref-xhtmlmod"><strong><span class="diff-new">[XHTMLMOD]</span></strong></a></dt>
+
+<dd><span class="diff-new">"</span> <cite><a href="http://www.w3.org/TR/2001/REC-xhtml-modularization-20010410"><span class="diff-new">Modularization of XHTML</span></a></cite> <span class=
+"diff-new">", M. Altheim et al., 10 April 2001.</span><br />
+<a href="http://www.w3.org/TR/xhtml-modularization"><span class="diff-new">Latest version</span></a> <span class="diff-new">available at: http://www.w3.org/TR/xhtml-modularization</span></dd>
+
+<dt><a name="ref-xml" id="ref-xml"><strong>[XML]</strong></a></dt>
+
+<dd><span class="diff-chg">"</span> <a href="http://www.w3.org/TR/2000/REC-xml-20001006"><span class="diff-chg">Extensible</span> Markup Language (XML) 1.0 <span class="diff-chg">Specification
+(Second Edition)</span></a> <span class="diff-chg">",</span> T. Bray, J. Paoli, C. M. Sperberg-McQueen, <span class="diff-chg">E. Maler, 6 October 2000.</span><br />
+<a href="http://www.w3.org/TR/REC-xml">Latest version</a> available at: http://www.w3.org/TR/REC-xml</dd>
+
+<dt><a name="ref-xmlns" id="ref-xmlns"><strong><span class="diff-chg">[XMLNS]</span></strong></a></dt>
+
+<dd><span class="diff-chg">"</span> <a href="http://www.w3.org/TR/1999/REC-xml-names-19990114"><span class="diff-chg">Namespaces</span> in <span class="diff-chg">XML</span></a> <span class=
+"diff-chg">",</span> T. Bray, D. Hollander, A. Layman, 14 January 1999.<br />
+XML namespaces provide a simple method for qualifying names used in XML documents by associating them with namespaces identified by URI.<br />
+<a href="http://www.w3.org/TR/REC-xml-names">Latest version</a> available at: http://www.w3.org/TR/REC-xml-names</dd>
+
+<dt><a name="ref-xmlc14n" id="ref-xmlc14n"><strong><span class="diff-new">[XMLC14N]</span></strong></a></dt>
+
+<dd><span class="diff-new">"</span> <a href="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"><span class="diff-new">Canonical XML Version 1.0</span></a> <span class="diff-new">", J. Boyer, 15 March
+2001.</span><br />
+<span class="diff-new">This document describes a method for generating a physical representation, the canonical form, of an XML document.</span><br />
+<a href="http://www.w3.org/TR/xml-c14n"><span class="diff-new">Latest version</span></a> <span class="diff-new">available at: http://www.w3.org/TR/xml-c14n</span></dd>
+</dl>
+
+<p><a href="http://www.w3.org/WAI/WCAG1AAA-Conformance" title="Explanation of Level Triple-A Conformance"><img height="32" width="88" src="http://www.w3.org/WAI/wcag1AAA.png" alt=
+"Level Triple-A conformance icon, W3C-WAI Web Content Accessibility Guidelines 1.0" /></a></p>
+</body>
+</html>
+

@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org" />
+<title>XHTML 1.0: The Extensible HyperText Markup Language (Second Edition)</title>
+<link rel="stylesheet" type="text/css" media="screen" href="xhtml.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="W3C-REC.css" />
+<link rel="next" type="text/html" href="introduction.html" />
+</head>
+<body>
+<div class="navbar">[<a href="introduction.html">next</a>]&#160;[<a href="#toc">table of contents</a>] 
+
+<hr />
+</div>
+
+<div class="head"><a href="http://www.w3.org/"><img height="48" width="72" src="w3c_home.png" alt="W3C" /></a> 
+
+<h1><a name="title" id="title"></a> XHTML&#8482; 1.0 The Extensible HyperText Markup Language (Second Edition)</h1>
+
+<h2><a name="title2" id="title2"></a> A Reformulation of HTML 4 in XML 1.0</h2>
+
+<h2><a name="subtitle" id="subtitle"></a> W3C Recommendation 26 January 2000, revised 1 August 2002</h2>
+
+<dl>
+<dt><a id="thisVersion" name="thisVersion">This version</a>:</dt>
+
+<dd><a href="http://www.w3.org/TR/2002/REC-xhtml1-20020801">http://www.w3.org/TR/2002/REC-xhtml1-20020801</a></dd>
+
+<dt>Latest version:</dt>
+
+<dd><a href="http://www.w3.org/TR/xhtml1">http://www.w3.org/TR/xhtml1</a></dd>
+
+<dt>Previous version:</dt>
+
+<dd><a href="http://www.w3.org/TR/2000/REC-xhtml1-20000126">http://www.w3.org/TR/2000/REC-xhtml1-20000126</a></dd>
+
+<dt>Diff-marked version:</dt>
+
+<dd><a href="xhtml1-diff.html">http://www.w3.org/TR/2002/REC-xhtml1-20020801/xhtml1-diff.html</a></dd>
+
+<dt>Authors:</dt>
+
+<dd>See <a href="acks.html#acks">acknowledgments</a>.</dd>
+</dl>
+
+<p>Please refer to the <a href="http://www.w3.org/2002/08/REC-xhtml1-20020801-errata"><strong>errata</strong></a> for this document, which may include some normative corrections. See also <a href= 
+"http://www.w3.org/MarkUp/translations"><strong>translations</strong></a>.</p>
+
+<p>This document is also available in these non-normative formats: <a href="Cover.html">Multi-part XHTML file</a>, <a href="xhtml1.ps">PostScript version</a>, <a href="xhtml1.pdf">PDF version</a>, <a
+href="xhtml1.zip">ZIP archive</a>, and <a href="xhtml1.tgz">Gzip'd TAR archive</a>.</p>
+
+<p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Copyright">Copyright</a> &#169;2002 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">
+W3C</abbr></a><sup>&#174;</sup> (<a href="http://www.lcs.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.inria.fr/"><abbr lang="fr" xml:lang="fr"
+title="Institut National de Recherche en Informatique et Automatique">INRIA</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href= 
+"http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#W3C_Trademarks">trademark</a>, <a href= 
+"http://www.w3.org/Consortium/Legal/copyright-documents-19990405">document use</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-software-19980720">software licensing</a> rules apply.</p>
+
+<hr />
+</div>
+
+<h2><a name="abstract" id="abstract"></a> Abstract</h2>
+
+<p>This specification defines the Second Edition of <abbr title="Extensible Hypertext Markup Language">XHTML</abbr> 1.0, a reformulation of HTML&#160;4 as an <abbr title="Extensible Markup Language">
+XML</abbr> 1.0 application, and three <abbr title="Document Type Definitions">DTDs</abbr> corresponding to the ones defined by HTML&#160;4. The semantics of the elements and their attributes are
+defined in the W3C Recommendation for HTML&#160;4. These semantics provide the foundation for future extensibility of XHTML. Compatibility with existing HTML user agents is possible by following a
+small set of guidelines.</p>
+
+<h2><a name="status" id="status"></a> Status of this document</h2>
+
+<p><em>This section describes the status of this document at the time of its publication. Other documents may supersede this document. The latest status of this document series is maintained at the
+W3C.</em></p>
+
+<p>This document is the second edition of the XHTML 1.0 specification incorporating the errata changes as of 1 August 2002. Changes between this version and the previous Recommendation are
+illustrated in a <a href="xhtml1-diff.html">diff-marked version</a>.</p>
+
+<p>This second edition is <em>not</em> a new version of XHTML 1.0 (first published 26 January 2000). The changes in this document reflect corrections applied as a result of comments submitted by the
+community and as a result of ongoing work within the HTML Working Group. There are no substantive changes in this document - only the integration of various errata.</p>
+
+<p>The list of known errors in this specification is available at <a href="http://www.w3.org/2002/08/REC-xhtml1-20020801-errata">http://www.w3.org/2002/08/REC-xhtml1-20020801-errata</a>.</p>
+
+<p>Please report errors in this document to <a href="mailto:www-html-editor@w3.org">www-html-editor@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/www-html-editor/">archive</a>). Public
+discussion on <abbr title="HyperText Markup Language">HTML</abbr> features takes place on the mailing list <a href="mailto:www-html@w3.org">www-html@w3.org</a> (<a href= 
+"http://lists.w3.org/Archives/Public/www-html/">archive</a>).</p>
+
+<p>This document has been produced as part of the <a href="http://www.w3.org/MarkUp/Activity">W3C HTML Activity</a>. The goals of the <a href="http://www.w3.org/MarkUp/Group/">HTML Working Group</a>
+<em>(<a href="http://cgi.w3.org/MemberAccess/">members only</a>)</em> are discussed in the <a href="http://www.w3.org/MarkUp/2000/Charter">HTML Working Group charter</a>.</p>
+
+<p>At the time of publication, the working group believed there were zero patent disclosures relevant to this specification. A current list of patent disclosures relevant to this specification may be
+found on the Working Group's <a href="http://www.w3.org/2002/07/HTML-IPR">patent disclosure page</a>.</p>
+
+<p>A list of current W3C Recommendations and other technical documents can be found at <a href="http://www.w3.org/TR">http://www.w3.org/TR</a>.</p>
+
+<h1><a name="toc" id="toc"></a> Quick Table of Contents</h1>
+
+<div class="toc">
+<ul class='toc'>
+<li class='tocline'>1. <a href="introduction.html#xhtml" class="tocxref">What is XHTML?</a></li>
+
+<li class='tocline'>2. <a href="definitions.html#defs" class="tocxref">Definitions</a></li>
+
+<li class='tocline'>3. <a href="normative.html#normative" class="tocxref">Normative Definition of XHTML 1.0</a></li>
+
+<li class='tocline'>4. <a href="diffs.html#diffs" class="tocxref">Differences with HTML&#160;4</a></li>
+
+<li class='tocline'>5. <a href="issues.html#issues" class="tocxref">Compatibility Issues</a></li>
+
+<li class='tocline'>A. <a href="dtds.html#dtds" class="tocxref">DTDs</a></li>
+
+<li class='tocline'>B. <a href="prohibitions.html#prohibitions" class="tocxref">Element Prohibitions</a></li>
+
+<li class='tocline'>C. <a href="guidelines.html#guidelines" class="tocxref">HTML Compatibility Guidelines</a></li>
+
+<li class='tocline'>D. <a href="acks.html#acks" class="tocxref">Acknowledgements</a></li>
+
+<li class='tocline'>E. <a href="references.html#refs" class="tocxref">References</a></li>
+</ul>
+</div>
+
+<h1><a name="contents" id="contents"></a> Full Table of Contents</h1>
+
+<div class="toc">
+<ul class='toc'>
+<li class='tocline'>1. <a href="introduction.html#xhtml" class="tocxref">What is XHTML?</a> 
+
+<ul class="toc">
+<li class='tocline'>1.1. <a href="introduction.html#html4" class="tocxref">What is HTML&#160;4?</a></li>
+
+<li class='tocline'>1.2. <a href="introduction.html#xml" class="tocxref">What is XML?</a></li>
+
+<li class='tocline'>1.3. <a href="introduction.html#why" class="tocxref">Why the need for XHTML?</a></li>
+</ul>
+</li>
+
+<li class='tocline'>2. <a href="definitions.html#defs" class="tocxref">Definitions</a> 
+
+<ul class="toc">
+<li class='tocline'>2.1. <a href="definitions.html#terms" class="tocxref">Terminology</a></li>
+
+<li class='tocline'>2.2. <a href="definitions.html#general" class="tocxref">General Terms</a></li>
+</ul>
+</li>
+
+<li class='tocline'>3. <a href="normative.html#normative" class="tocxref">Normative Definition of XHTML 1.0</a> 
+
+<ul class="toc">
+<li class='tocline'>3.1. <a href="normative.html#docconf" class="tocxref">Document Conformance</a> 
+
+<ul class="toc">
+<li class='tocline'>3.1.1. <a href="normative.html#strict" class="tocxref">Strictly Conforming Documents</a></li>
+
+<li class='tocline'>3.1.2. <a href="normative.html#well-formed" class="tocxref">Using XHTML with other namespaces</a></li>
+</ul>
+</li>
+
+<li class='tocline'>3.2. <a href="normative.html#uaconf" class="tocxref">User Agent Conformance</a></li>
+</ul>
+</li>
+
+<li class='tocline'>4. <a href="diffs.html#diffs" class="tocxref">Differences with HTML&#160;4</a> 
+
+<ul class="toc">
+<li class='tocline'>4.1. <a href="diffs.html#h-4.1" class="tocxref">Documents must be well-formed</a></li>
+
+<li class='tocline'>4.2. <a href="diffs.html#h-4.2" class="tocxref">Element and attribute names must be in lower case</a></li>
+
+<li class='tocline'>4.3. <a href="diffs.html#h-4.3" class="tocxref">For non-empty elements, end tags are required</a></li>
+
+<li class='tocline'>4.4. <a href="diffs.html#h-4.4" class="tocxref">Attribute values must always be quoted</a></li>
+
+<li class='tocline'>4.5. <a href="diffs.html#h-4.5" class="tocxref">Attribute Minimization</a></li>
+
+<li class='tocline'>4.6. <a href="diffs.html#h-4.6" class="tocxref">Empty Elements</a></li>
+
+<li class='tocline'>4.7. <a href="diffs.html#h-4.7" class="tocxref">White Space handling in attribute values</a></li>
+
+<li class='tocline'>4.8. <a href="diffs.html#h-4.8" class="tocxref">Script and Style elements</a></li>
+
+<li class='tocline'>4.9. <a href="diffs.html#h-4.9" class="tocxref">SGML exclusions</a></li>
+
+<li class='tocline'>4.10. <a href="diffs.html#h-4.10" class="tocxref">The elements with 'id' and 'name' attributes</a></li>
+
+<li class='tocline'>4.11. <a href="diffs.html#h-4.11" class="tocxref">Attributes with pre-defined value sets</a></li>
+
+<li class='tocline'>4.12. <a href="diffs.html#h-4.12" class="tocxref">Entity references as hex values</a></li>
+</ul>
+</li>
+
+<li class='tocline'>5. <a href="issues.html#issues" class="tocxref">Compatibility Issues</a> 
+
+<ul class="toc">
+<li class='tocline'>5.1. <a href="issues.html#media" class="tocxref">Internet Media Type</a></li>
+</ul>
+</li>
+
+<li class='tocline'>A. <a href="dtds.html#dtds" class="tocxref">DTDs</a> 
+
+<ul class="toc">
+<li class='tocline'>A.1. <a href="dtds.html#h-A1" class="tocxref">Document Type Definitions</a> 
+
+<ul class="toc">
+<li class='tocline'>A.1.1. <a href="dtds.html#a_dtd_XHTML-1.0-Strict" class="tocxref">XHTML-1.0-Strict</a></li>
+
+<li class='tocline'>A.1.2. <a href="dtds.html#a_dtd_XHTML-1.0-Transitional" class="tocxref">XHTML-1.0-Transitional</a></li>
+
+<li class='tocline'>A.1.3. <a href="dtds.html#a_dtd_XHTML-1.0-Frameset" class="tocxref">XHTML-1.0-Frameset</a></li>
+</ul>
+</li>
+
+<li class='tocline'>A.2. <a href="dtds.html#h-A2" class="tocxref">Entity Sets</a> 
+
+<ul class="toc">
+<li class='tocline'>A.2.1. <a href="dtds.html#a_dtd_Latin-1_characters" class="tocxref">Latin-1 characters</a></li>
+
+<li class='tocline'>A.2.2. <a href="dtds.html#a_dtd_Special_characters" class="tocxref">Special characters</a></li>
+
+<li class='tocline'>A.2.3. <a href="dtds.html#a_dtd_Symbols" class="tocxref">Symbols</a></li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class='tocline'>B. <a href="prohibitions.html#prohibitions" class="tocxref">Element Prohibitions</a></li>
+
+<li class='tocline'>C. <a href="guidelines.html#guidelines" class="tocxref">HTML Compatibility Guidelines</a> 
+
+<ul class="toc">
+<li class='tocline'>C.1. <a href="guidelines.html#C_1" class="tocxref">Processing Instructions and the XML Declaration</a></li>
+
+<li class='tocline'>C.2. <a href="guidelines.html#C_2" class="tocxref">Empty Elements</a></li>
+
+<li class='tocline'>C.3. <a href="guidelines.html#C_3" class="tocxref"> Element Minimization and Empty Element Content</a></li>
+
+<li class='tocline'>C.4. <a href="guidelines.html#C_4" class="tocxref">Embedded Style Sheets and Scripts</a></li>
+
+<li class='tocline'>C.5. <a href="guidelines.html#C_5" class="tocxref">Line Breaks within Attribute Values</a></li>
+
+<li class='tocline'>C.6. <a href="guidelines.html#C_6" class="tocxref">Isindex</a></li>
+
+<li class='tocline'>C.7. <a href="guidelines.html#C_7" class="tocxref">The <code>lang</code> and <code>xml:lang</code> Attributes</a></li>
+
+<li class='tocline'>C.8. <a href="guidelines.html#C_8" class="tocxref">Fragment Identifiers</a></li>
+
+<li class='tocline'>C.9. <a href="guidelines.html#C_9" class="tocxref">Character Encoding</a></li>
+
+<li class='tocline'>C.10. <a href="guidelines.html#C_10" class="tocxref">Boolean Attributes</a></li>
+
+<li class='tocline'>C.11. <a href="guidelines.html#C_11" class="tocxref">Document Object Model and XHTML</a></li>
+
+<li class='tocline'>C.12. <a href="guidelines.html#C_12" class="tocxref">Using Ampersands in Attribute Values (and Elsewhere)</a></li>
+
+<li class='tocline'>C.13. <a href="guidelines.html#C_13" class="tocxref">Cascading Style Sheets (CSS) and XHTML</a></li>
+
+<li class='tocline'>C.14. <a href="guidelines.html#C_14" class="tocxref">Referencing Style Elements when serving as XML</a></li>
+
+<li class='tocline'>C.15. <a href="guidelines.html#C_15" class="tocxref">White Space Characters in HTML vs. XML</a></li>
+
+<li class='tocline'>C.16. <a href="guidelines.html#C_16" class="tocxref">The Named Character Reference &amp;apos;</a></li>
+</ul>
+</li>
+
+<li class='tocline'>D. <a href="acks.html#acks" class="tocxref">Acknowledgements</a></li>
+
+<li class='tocline'>E. <a href="references.html#refs" class="tocxref">References</a></li>
+</ul>
+</div>
+
+<hr />
+<div class="navbar">[<a href="introduction.html">next</a>]&#160;[<a href="#toc">table of contents</a>]</div>
+
+<p><a href="http://www.w3.org/WAI/WCAG1AAA-Conformance" title="Explanation of Level Triple-A Conformance"><img height="32" width="88" src="http://www.w3.org/WAI/wcag1AAA.png" alt=
+"Level Triple-A conformance icon, W3C-WAI Web Content Accessibility Guidelines 1.0" /></a></p>
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+w3c-dtd-xhtml (1.1-5) unstable; urgency=low
+
+  * Do not install compatibility symbolic links if they exist already.
+	
+ -- Frederic Schutz <schutz@mathgen.ch>  Sun,  8 Aug 2004 22:57:13 +1000
+
+
+w3c-dtd-xhtml (1.1-4) unstable; urgency=low
+
+  * Package upload sponsored by Erich Schubert
+  * Register XML DTDs in central catalog (closes: Bug#242486)
+  * Follow the Debian XML policy and install dtds in /usr/share/xml,
+    with links in /usr/share/sgml
+  * Build-depends on xml-core (a Depends is also added automatically by
+    debhelper)
+  * Updated to standards 3.6.1.1 (no change needed)
+
+ -- Frederic Schutz <schutz@mathgen.ch>  Wed,  4 Aug 2004 01:05:27 +1000
+
+w3c-dtd-xhtml (1.1-3) unstable; urgency=low
+
+  * Package upload sponsored by Adam di Carlo
+  * Use the debian/compat file instead of DH_COMPAT for debhelper
+    compatibility mode
+  * Use new dh_installcatalogs, requires debhelper (>= 4.1.31)
+  * We don't build the symlinks under /usr/share/sgml anymore, so
+    we don't need to build-depends on sgml-data
+  * debian/rules: removed useless commands
+
+ -- Frederic Schutz <schutz@mathgen.ch>  Thu,  3 Apr 2003 17:45:26 +1000
+
+w3c-dtd-xhtml (1.1-2) unstable; urgency=low
+
+  * Package upload sponsored by Adam Di Carlo
+  * Requires: sgml-data (>= 1.9.1)
+  * Provides all catalogs in XML format (will be registered centrally
+    when a centralised XML catalog will exist in Debian)
+    See note in README.Debian
+  * Updated to standards 3.5.9.0 (no change needed)
+
+ -- Frederic Schutz <schutz@mathgen.ch>  Mon, 24 Mar 2003 10:33:29 +1100
+
+w3c-dtd-xhtml (1.1-1) unstable; urgency=low
+
+  * Initial release, closes: Bug#139058
+  * Package upload sponsored by Adam Di Carlo
+  * Changes to the upstream files:
+      - renamed all catalogs (*.soc, *.cat) to "catalog" for coherence
+      - replaced all SGMLDECL in catalogs by DTDDECL
+      - reorganised files so that they fit in the Debian /usr/share/sgml 
+        directory structure
+      - added generic (unofficial) mappings in addition to those provided,
+        see /usr/share/sgml/html/dtd/xhtml/catalog.
+
+ -- Frederic Schutz <schutz@mathgen.ch>  Tue,  4 Feb 2003 19:30:22 +1100

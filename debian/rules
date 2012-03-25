@@ -2,6 +2,7 @@
 
 PKG  := $(shell dh_listpackages)
 TMP  := $(CURDIR)/debian/$(PKG)
+LEGACY := $(CURDIR)/debian/w3c-dtd-xhtml
 
 %:
 	dh $@ 
@@ -13,4 +14,11 @@ override_dh_auto_build:
 override_dh_install:
 	dh_install
 	dh_installxmlcatalogs
+
+override_dh_installchangelogs:
+	# Take all but the last 25 lines of the package changelog
+	sed -n -e :a -e'1,25!{P;N;D};N;ba' debian/changelog > $(LEGACY).changelog
+	# and combine with all of the legacy changelog
+	cat $(CURDIR)/debian/legacy/changelog >> $(LEGACY).changelog
+	dh_installchangelogs
 

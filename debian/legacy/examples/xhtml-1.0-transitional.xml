@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Testing XHTML 1.0 Transitional</title>
+  </head>
+  <body>
+    <p>We're just testing stuff from <a
+    href="http://www.w3.org/">W3C</a>.</p>
+  </body>
+</html>

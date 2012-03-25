@@ -13,6 +13,8 @@ w3c-sgml-lib (1.2-2) UNRELEASED; urgency=low
   * Raised compat level and debhelper version to 8
   * Added debian/generate_catalog_stuff.pl to build rules
     to regnerate debian/xmlcatalogs
+  * Merged in w3c-dtd-xhtml (Closes: #555118)
+    - Home page field added (Closes: #615360)
 
  -- Nicholas Bamber <nicholas@periapt.co.uk>  Sun, 11 Mar 2012 16:17:24 +0000
 

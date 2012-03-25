@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org" />
+<title>XHTML 1.0 - Normative Definition of XHTML 1.0</title>
+<link rel="stylesheet" type="text/css" media="screen" href="xhtml.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="W3C-REC.css" />
+</head>
+<body>
+<div class="navbar">[<a href="definitions.html">previous</a>] &#160; [<a href="diffs.html">next</a>] &#160; [<a href="Cover.html#toc">table of contents</a>] 
+
+<hr />
+</div>
+
+<h1><a name="normative" id="normative">3.</a> Normative Definition of XHTML 1.0</h1>
+
+<div class='subtoc'>
+<p><strong>Contents</strong></p>
+
+<ul class='toc'>
+<li class='tocline'>3.1. <a href="#docconf" class="tocxref">Document Conformance</a> 
+
+<ul class="toc">
+<li class='tocline'>3.1.1. <a href="#strict" class="tocxref">Strictly Conforming Documents</a></li>
+
+<li class='tocline'>3.1.2. <a href="#well-formed" class="tocxref">Using XHTML with other namespaces</a></li>
+</ul>
+</li>
+
+<li class='tocline'>3.2. <a href="#uaconf" class="tocxref">User Agent Conformance</a></li>
+</ul>
+</div>
+
+<p><strong>This section is normative.</strong></p>
+
+<h2><a name="docconf" id="docconf">3.1.</a> Document Conformance</h2>
+
+<p>This version of XHTML provides a definition of strictly conforming XHTML 1.0 documents, which are restricted to elements and attributes from the XML and XHTML 1.0 namespaces. See <a href= 
+"#well-formed">Section 3.1.2</a> for information on using XHTML with other namespaces, for instance, to include metadata expressed in <abbr title="Resource Description Format">RDF</abbr> within XHTML
+documents.</p>
+
+<h3><a name="strict" id="strict">3.1.1.</a> Strictly Conforming Documents</h3>
+
+<p>A Strictly Conforming XHTML Document is an XML document that requires only the facilities described as mandatory in this specification. Such a document must meet all of the following criteria:</p>
+
+<ol>
+<li>
+<p>It must conform to the constraints expressed in one of the three DTDs found in <a href="dtds.html#dtds">DTDs</a> and in <a href="prohibitions.html#prohibitions">Appendix B</a>.</p>
+</li>
+
+<li>
+<p>The root element of the document must be <code>html</code>.</p>
+</li>
+
+<li>
+<p>The root element of the document must contain an <code>xmlns</code> declaration for the XHTML namespace [<a class="nref" href="references.html#ref-xmlns">XMLNS</a>]. The namespace for XHTML is
+defined to be <code>http://www.w3.org/1999/xhtml</code>. An example root element might look like:</p>
+
+<div class="good">
+<pre>
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+</pre>
+</div>
+</li>
+
+<li>
+<p>There must be a DOCTYPE declaration in the document prior to the root element. The public identifier included in the DOCTYPE declaration must reference one of the three DTDs found in <a href= 
+"dtds.html#dtds">DTDs</a> using the respective Formal Public Identifier. The system identifier may be changed to reflect local system conventions.</p>
+
+<pre>
+&lt;!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+
+&lt;!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+
+&lt;!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;
+</pre>
+</li>
+
+<li>
+<p>The DTD subset must not be used to override any parameter entities in the DTD.</p>
+</li>
+</ol>
+
+<p>An XML declaration is not required in all XML documents; however XHTML document authors are strongly encouraged to use XML declarations in all their documents. Such a declaration is required when
+the character encoding of the document is other than the default UTF-8 or UTF-16 and no encoding was determined by a higher-level protocol. Here is an example of an XHTML document. In this example,
+the XML declaration is included.</p>
+
+<div class="good">
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Virtual Library&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Moved to &lt;a href="http://example.org/"&gt;example.org&lt;/a&gt;.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+<h3><a name="well-formed" id="well-formed">3.1.2.</a> Using XHTML with other namespaces</h3>
+
+<p>The XHTML namespace may be used with other XML namespaces as per [<a class="nref" href="references.html#ref-xmlns">XMLNS</a>], although such documents are not strictly conforming XHTML 1.0
+documents as defined above. Work by W3C is addressing ways to specify conformance for documents involving multiple namespaces. For an example, see [<a class="nref" href= 
+"references.html#ref-xhtml-mathml">XHTML+MathML</a>].</p>
+
+<p>The following example shows the way in which XHTML 1.0 could be used in conjunction with the MathML Recommendation:</p>
+
+<div class="good">
+<pre>
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;A Math Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;The following is MathML markup:&lt;/p&gt;
+    &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+      &lt;apply&gt; &lt;log/&gt;
+        &lt;logbase&gt;
+          &lt;cn&gt; 3 &lt;/cn&gt;
+        &lt;/logbase&gt;
+        &lt;ci&gt; x &lt;/ci&gt;
+      &lt;/apply&gt;
+    &lt;/math&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+<p>The following example shows the way in which XHTML 1.0 markup could be incorporated into another XML namespace:</p>
+
+<div class="good">
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!-- initially, the default namespace is "books" --&gt;
+&lt;book xmlns='urn:loc.gov:books'
+    xmlns:isbn='urn:ISBN:0-395-36341-6' xml:lang="en" lang="en"&gt;
+  &lt;title&gt;Cheaper by the Dozen&lt;/title&gt;
+  &lt;isbn:number&gt;1568491379&lt;/isbn:number&gt;
+  &lt;notes&gt;
+    &lt;!-- make HTML the default namespace for a hypertext commentary --&gt;
+    &lt;p xmlns='http://www.w3.org/1999/xhtml'&gt;
+        This is also available &lt;a href="http://www.w3.org/"&gt;online&lt;/a&gt;.
+    &lt;/p&gt;
+  &lt;/notes&gt;
+&lt;/book&gt;
+</pre>
+</div>
+
+<h2><a name="uaconf" id="uaconf">3.2.</a> User Agent Conformance</h2>
+
+<p>A conforming user agent must meet all of the following criteria:</p>
+
+<ol>
+<li>In order to be consistent with the XML 1.0 Recommendation [<a class="nref" href="references.html#ref-xml">XML</a>], the user agent must parse and evaluate an XHTML document for well-formedness.
+If the user agent claims to be a validating user agent, it must also validate documents against their referenced DTDs according to [<a class="nref" href="references.html#ref-xml">XML</a>].</li>
+
+<li>When the user agent claims to support <a href="definitions.html#facilities">facilities</a> defined within this specification or required by this specification through normative reference, it must
+do so in ways consistent with the facilities' definition.</li>
+
+<li>When a user agent processes an XHTML document as generic XML, it shall only recognize attributes of type <code>ID</code> (i.e. the <code>id</code> attribute on most XHTML elements) as fragment
+identifiers.</li>
+
+<li>If a user agent encounters an element it does not recognize, it must process the element's content.</li>
+
+<li>If a user agent encounters an attribute it does not recognize, it must ignore the entire attribute specification (i.e., the attribute and its value).</li>
+
+<li>If a user agent encounters an attribute value it does not recognize, it must use the default attribute value.</li>
+
+<li>If it encounters an entity reference (other than one of the entities defined in this recommendation or in the XML recommendation) for which the user agent has processed no declaration (which
+could happen if the declaration is in the external subset which the user agent hasn't read), the entity reference should be processed as the characters (starting with the ampersand and ending with
+the semi-colon) that make up the entity reference.</li>
+
+<li>When processing content, user agents that encounter characters or character entity references that are recognized but not renderable may substitute another rendering that gives the same meaning,
+or must display the document in such a way that it is obvious to the user that normal rendering has not taken place.</li>
+
+<li>
+<p>White space is handled according to the following rules. The following characters are defined in [<a class="nref" href="references.html#ref-xml">XML</a>] white space characters:</p>
+
+<ul>
+<li>SPACE (&amp;#x0020;)</li>
+
+<li>HORIZONTAL TABULATION (&amp;#x0009;)</li>
+
+<li>CARRIAGE RETURN (&amp;#x000D;)</li>
+
+<li>LINE FEED (&amp;#x000A;)</li>
+</ul>
+
+<p>The XML processor normalizes different systems' line end codes into one single LINE FEED character, that is passed up to the application.</p>
+
+<p>The user agent must use the definition from CSS for processing whitespace characters [<a class="nref" href="references.html#ref-css2">CSS2</a>]. <em>Note that the CSS2 recommendation does not
+explicitly address the issue of whitespace handling in non-Latin character sets. This will be addressed in a future version of CSS, at which time this reference will be updated.</em></p>
+</li>
+</ol>
+
+<p>Note that in order to produce a Canonical XHTML document, the rules above must be applied and the rules in [<a class="nref" href="references.html#ref-xmlc14n">XMLC14N</a>] must also be applied to
+the document.</p>
+
+<hr />
+<div class="navbar">[<a href="definitions.html">previous</a>] &#160; [<a href="diffs.html">next</a>] &#160; [<a href="Cover.html#toc">table of contents</a>]</div>
+</body>
+</html>
+

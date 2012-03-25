@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org" />
+<title>XHTML 1.0 - Differences with HTML&#160;4</title>
+<link rel="stylesheet" type="text/css" media="screen" href="xhtml.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="W3C-REC.css" />
+</head>
+<body>
+<div class="navbar">[<a href="normative.html">previous</a>] &#160; [<a href="issues.html">next</a>] &#160; [<a href="Cover.html#toc">table of contents</a>] 
+
+<hr />
+</div>
+
+<h1><a name="diffs" id="diffs">4.</a> Differences with HTML&#160;4</h1>
+
+<div class='subtoc'>
+<p><strong>Contents</strong></p>
+
+<ul class='toc'>
+<li class='tocline'>4.1. <a href="#h-4.1" class="tocxref">Documents must be well-formed</a></li>
+
+<li class='tocline'>4.2. <a href="#h-4.2" class="tocxref">Element and attribute names must be in lower case</a></li>
+
+<li class='tocline'>4.3. <a href="#h-4.3" class="tocxref">For non-empty elements, end tags are required</a></li>
+
+<li class='tocline'>4.4. <a href="#h-4.4" class="tocxref">Attribute values must always be quoted</a></li>
+
+<li class='tocline'>4.5. <a href="#h-4.5" class="tocxref">Attribute Minimization</a></li>
+
+<li class='tocline'>4.6. <a href="#h-4.6" class="tocxref">Empty Elements</a></li>
+
+<li class='tocline'>4.7. <a href="#h-4.7" class="tocxref">White Space handling in attribute values</a></li>
+
+<li class='tocline'>4.8. <a href="#h-4.8" class="tocxref">Script and Style elements</a></li>
+
+<li class='tocline'>4.9. <a href="#h-4.9" class="tocxref">SGML exclusions</a></li>
+
+<li class='tocline'>4.10. <a href="#h-4.10" class="tocxref">The elements with 'id' and 'name' attributes</a></li>
+
+<li class='tocline'>4.11. <a href="#h-4.11" class="tocxref">Attributes with pre-defined value sets</a></li>
+
+<li class='tocline'>4.12. <a href="#h-4.12" class="tocxref">Entity references as hex values</a></li>
+</ul>
+</div>
+
+<p><strong>This section is informative.</strong></p>
+
+<p>Due to the fact that XHTML is an XML application, certain practices that were perfectly legal in SGML-based HTML&#160;4 [<a class="nref" href="references.html#ref-html4">HTML4</a>] must be
+changed.</p>
+
+<h2><a name="h-4.1" id="h-4.1">4.1.</a> Documents must be well-formed</h2>
+
+<p><a href="definitions.html#wellformed">Well-formedness</a> is a new concept introduced by [<a class="nref" href="references.html#ref-xml">XML</a>]. Essentially this means that all elements must
+either have closing tags or be written in a special form (as described below), and that all the elements must nest properly.</p>
+
+<p>Although overlapping is illegal in SGML, it is widely tolerated in existing browsers.</p>
+
+<p><strong><em>CORRECT: nested elements.</em></strong></p>
+
+<div class="good">
+<p>&lt;p&gt;here is an emphasized &lt;em&gt;paragraph&lt;/em&gt;.&lt;/p&gt;</p>
+</div>
+
+<p><strong><em>INCORRECT: overlapping elements</em></strong></p>
+
+<div class="bad">
+<p>&lt;p&gt;here is an emphasized &lt;em&gt;paragraph.&lt;/p&gt;&lt;/em&gt;</p>
+</div>
+
+<h2><a name="h-4.2" id="h-4.2">4.2.</a> Element and attribute names must be in lower case</h2>
+
+<p>XHTML documents must use lower case for all HTML element and attribute names. This difference is necessary because XML is case-sensitive e.g. &lt;li&gt; and &lt;LI&gt; are different tags.</p>
+
+<h2><a name="h-4.3" id="h-4.3">4.3.</a> For non-empty elements, end tags are required</h2>
+
+<p>In SGML-based HTML 4 certain elements were permitted to omit the end tag; with the elements that followed implying closure. XML does not allow end tags to be omitted. All elements other than those
+declared in the DTD as <code>EMPTY</code> must have an end tag. Elements that are declared in the DTD as <code>EMPTY</code> can have an end tag <em>or</em> can use empty element shorthand (see <a
+href="#h-4.6">Empty Elements</a>).</p>
+
+<p><strong><em>CORRECT: terminated elements</em></strong></p>
+
+<div class="good">
+<p>&lt;p&gt;here is a paragraph.&lt;/p&gt;&lt;p&gt;here is another paragraph.&lt;/p&gt;</p>
+</div>
+
+<p><strong><em>INCORRECT: unterminated elements</em></strong></p>
+
+<div class="bad">
+<p>&lt;p&gt;here is a paragraph.&lt;p&gt;here is another paragraph.</p>
+</div>
+
+<h2><a name="h-4.4" id="h-4.4">4.4.</a> Attribute values must always be quoted</h2>
+
+<p>All attribute values must be quoted, even those which appear to be numeric.</p>
+
+<p><strong><em>CORRECT: quoted attribute values</em></strong></p>
+
+<div class="good">
+<p>&lt;td rowspan="3"&gt;</p>
+</div>
+
+<p><strong><em>INCORRECT: unquoted attribute values</em></strong></p>
+
+<div class="bad">
+<p>&lt;td rowspan=3&gt;</p>
+</div>
+
+<h2><a name="h-4.5" id="h-4.5">4.5.</a> Attribute Minimization</h2>
+
+<p>XML does not support attribute minimization. Attribute-value pairs must be written in full. Attribute names such as <code>compact</code> and <code>checked</code> cannot occur in elements without
+their value being specified.</p>
+
+<p><strong><em>CORRECT: unminimized attributes</em></strong></p>
+
+<div class="good">
+<p>&lt;dl compact="compact"&gt;</p>
+</div>
+
+<p><strong><em>INCORRECT: minimized attributes</em></strong></p>
+
+<div class="bad">
+<p>&lt;dl compact&gt;</p>
+</div>
+
+<h2><a name="h-4.6" id="h-4.6">4.6.</a> Empty Elements</h2>
+
+<p>Empty elements must either have an end tag or the start tag must end with <code>/&gt;</code>. For instance, <code>&lt;br/&gt;</code> or <code>&lt;hr&gt;&lt;/hr&gt;</code>. See <a href= 
+"guidelines.html#guidelines">HTML Compatibility Guidelines</a> for information on ways to ensure this is backward compatible with HTML 4 user agents.</p>
+
+<p><strong><em>CORRECT: terminated empty elements</em></strong></p>
+
+<div class="good">
+<p>&lt;br/&gt;&lt;hr/&gt;</p>
+</div>
+
+<p><strong><em>INCORRECT: unterminated empty elements</em></strong></p>
+
+<div class="bad">
+<p>&lt;br&gt;&lt;hr&gt;</p>
+</div>
+
+<h2><a name="h-4.7" id="h-4.7">4.7.</a> White Space handling in attribute values</h2>
+
+<p>When user agents process attributes, they do so according to <a href="http://www.w3.org/TR/REC-xml#AVNormalize">Section 3.3.3</a> of [<a class="nref" href="references.html#ref-xml">XML</a>]:</p>
+
+<ul>
+<li>Strip leading and trailing white space.</li>
+
+<li>Map sequences of one or more white space characters (including line breaks) to a single inter-word space.</li>
+</ul>
+
+<h2><a name="h-4.8" id="h-4.8">4.8.</a> Script and Style elements</h2>
+
+<p>In XHTML, the script and style elements are declared as having <code>#PCDATA</code> content. As a result, <code>&lt;</code> and <code>&amp;</code> will be treated as the start of markup, and
+entities such as <code>&amp;lt;</code> and <code>&amp;amp;</code> will be recognized as entity references by the XML processor to <code>&lt;</code> and <code>&amp;</code> respectively. Wrapping the
+content of the script or style element within a <code>CDATA</code> marked section avoids the expansion of these entities.</p>
+
+<div class="good">
+<pre>
+&lt;script type="text/javascript"&gt;
+&lt;![CDATA[
+... unescaped script content ...
+]]&gt;
+&lt;/script&gt;
+</pre>
+</div>
+
+<p><code>CDATA</code> sections are recognized by the XML processor and appear as nodes in the Document Object Model, see <a href=
+"http://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html#ID-E067D597">Section 1.3</a> of the DOM Level 1 Recommendation [<a class="nref" href="references.html#ref-dom">DOM</a>].</p>
+
+<p>An alternative is to use external script and style documents.</p>
+
+<h2><a name="h-4.9" id="h-4.9">4.9.</a> SGML exclusions</h2>
+
+<p>SGML gives the writer of a DTD the ability to exclude specific elements from being contained within an element. Such prohibitions (called "exclusions") are not possible in XML.</p>
+
+<p>For example, the HTML 4 Strict DTD forbids the nesting of an '<code>a</code>' element within another '<code>a</code>' element to any descendant depth. It is not possible to spell out such
+prohibitions in XML. Even though these prohibitions cannot be defined in the DTD, certain elements should not be nested. A summary of such elements and the elements that should not be nested in them
+is found in the normative <a href="prohibitions.html#prohibitions">Element Prohibitions</a>.</p>
+
+<h2><a name="h-4.10" id="h-4.10">4.10.</a> The elements with 'id' and 'name' attributes</h2>
+
+<p>HTML 4 defined the <code>name</code> attribute for the elements <code>a</code>, <code>applet</code>, <code>form</code>, <code>frame</code>, <code>iframe</code>, <code>img</code>, and <code>
+map</code>. HTML 4 also introduced the <code>id</code> attribute. Both of these attributes are designed to be used as fragment identifiers.</p>
+
+<p>In XML, fragment identifiers are of type <code>ID</code>, and there can only be a single attribute of type <code>ID</code> per element. Therefore, in XHTML 1.0 the <code>id</code> attribute is
+defined to be of type <code>ID</code>. In order to ensure that XHTML 1.0 documents are well-structured XML documents, XHTML 1.0 documents MUST use the <code>id</code> attribute when defining fragment
+identifiers on the elements listed above. See the <a href="guidelines.html#guidelines">HTML Compatibility Guidelines</a> for information on ensuring such anchors are backward compatible when serving
+XHTML documents as media type <code>text/html</code>.</p>
+
+<p>Note that in XHTML 1.0, the <code>name</code> attribute of these elements is formally deprecated, and will be removed in a subsequent version of XHTML.</p>
+
+<h2><a name="h-4.11" id="h-4.11">4.11.</a> Attributes with pre-defined value sets</h2>
+
+<p>HTML 4 and XHTML both have some attributes that have pre-defined and limited sets of values (e.g. the <code>type</code> attribute of the <code>input</code> element). In SGML and XML, these are
+called <em>enumerated attributes</em>. Under HTML 4, the interpretation of these values was <em>case-insensitive</em>, so a value of <code>TEXT</code> was equivalent to a value of <code>text</code>.
+Under XML, the interpretation of these values is <em>case-sensitive</em>, and in XHTML 1 all of these values are defined in lower-case.</p>
+
+<h2><a name="h-4.12" id="h-4.12">4.12.</a> Entity references as hex values</h2>
+
+<p>SGML and XML both permit references to characters by using hexadecimal values. In SGML these references could be made using either &amp;#Xnn; or &amp;#xnn;. In XML documents, you must use the
+lower-case version (i.e. &amp;#xnn;)</p>
+
+<hr />
+<div class="navbar">[<a href="normative.html">previous</a>] &#160; [<a href="issues.html">next</a>] &#160; [<a href="Cover.html#toc">table of contents</a>]</div>
+</body>
+</html>
+
