@@ -11,6 +11,13 @@ Files: debian/*
 Copyright: 2010-2012, Nicholas Bamber <nicholas@periapt.co.uk>
 License: Artistic
 
+Files: debian/legacy/*
+Copyright: 1994-2010, W3C(R) (MIT, ERCIM, KEIO)
+License: W3C-Software
+
+Files: debian/legacy/changelog
+Copyright: 2003-2004, Frederic Schutz <schutz@mathgen.ch>
+
 License: W3C-Software
  By obtaining, using and/or copying this work, you (the licensee) agree
  that you have read, understood, and will comply with the following

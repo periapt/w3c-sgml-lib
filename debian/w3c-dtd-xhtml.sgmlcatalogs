@@ -1,0 +1,5 @@
+debian/legacy/1.0/DTD/xhtml.soc /usr/share/xml/xhtml/schema/dtd/1.0/catalog
+debian/legacy/1.1/DTD/xhtml11.cat /usr/share/xml/xhtml/schema/dtd/1.1/catalog
+debian/legacy/basic/xhtml-basic10.cat /usr/share/xml/xhtml/schema/dtd/basic/catalog
+debian/legacy/catalog /usr/share/xml/xhtml/schema/dtd/catalog
+debian/legacy/entities/catalog /usr/share/xml/entities/xhtml/catalog
