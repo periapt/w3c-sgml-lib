@@ -1,2 +1,4 @@
 debian/xmlcatalogs
 debian/w3c-dtd-xhtml.changelog
+debian/w3c-dtd-xhtml.links
+debian/w3c-dtd-xhtml.install

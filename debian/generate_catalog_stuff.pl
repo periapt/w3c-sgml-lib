@@ -8,6 +8,7 @@ use XML::LibXML;
 use autodie qw(open close);
 use File::Find;
 use File::Slurp;
+use File::Basename;
 
 Readonly my $SOURCE_DIR => 'htdocs/sgml-lib';
 Readonly my $CATALOG_XML => 'catalog.xml';
@@ -16,15 +17,21 @@ Readonly my $DEST_DIR => 'usr/share/xml/w3c-sgml-lib/schema/dtd';
 Readonly my $LEGACY_DTD_DIR => 'usr/share/xml/xhtml/schema/dtd';
 Readonly my $LEGACY_ENT_DIR => 'usr/share/xml/entities/xhtml';
 Readonly my $LEGACY_SRC_DIR => 'debian/legacy';
-Readonly my $LEGACY_MATCH_RE => qr{\A[\w\-]+\.(ent|dcl|dtd|mod)\z}xms;
+Readonly my $LEGACY_MATCH_RE => qr{\A[\w\-]+\.(ent|dtd|mod)\z}xms;
 Readonly my $LEGACY_MATCH_ENT_RE => qr{\A[\w\-\/]+\.ent\z}xms;
-Readonly my $LEGACY_MATCH_DCL_RE => qr{\A[\w\-\.\/]+\.dcl\z}xms;
 Readonly my $PUBLIC_ID_RE => qr{^\s*PUBLIC\s+\"([\-\/\w\.\s]+)\"\s*$}xms;
+Readonly my %LEGACY_DCL_LINKS => (
+    "$LEGACY_DTD_DIR/1.0/xhtml1.dcl" => 'usr/share/xml/declaration/xml.dcl',
+    "$LEGACY_DTD_DIR/1.1/xml1.dcl" => 'usr/share/xml/declaration/xml.dcl',
+    "$LEGACY_DTD_DIR/1.1/xml1n.dcl" => 'usr/share/xml/declaration/xml1n.dcl',
+    "$LEGACY_DTD_DIR/basic/xml1.dcl" => 'usr/share/xml/declaration/xml.dcl',
+);
 
 sanity_check();
 generate_debian_xmlcatalogs();
 my %legacy_src = collect_legacy_src();
 my %public_ids = extract_public_ids(keys %legacy_src);
+generate_legacy_stuff(\%legacy_src, \%public_ids);
 
 exit(0);
 
@@ -68,6 +75,7 @@ sub collect_legacy_src {
             else {
                 $dest =~  s{$LEGACY_SRC_DIR}{$LEGACY_DTD_DIR}xms;
             }
+            $dest =~ s{/DTD/}{/}xms;
             $results{$File::Find::name} = $dest;
             return;
         },
@@ -80,10 +88,7 @@ sub extract_public_ids {
     my %results;
     foreach my $file (@src_files) {
         my $doc = read_file($file);
-        if ($file =~ $LEGACY_MATCH_DCL_RE) {
-            $results{$file} = undef;
-        }
-        elsif ($doc =~ $PUBLIC_ID_RE) {
+        if ($doc =~ $PUBLIC_ID_RE) {
             $results{$file} = $1;
         }
         else {
@@ -91,6 +96,23 @@ sub extract_public_ids {
         }
     }
     return %results;
+}
+
+sub generate_legacy_stuff {
+    my ($legacy_src, $public_ids) = @_;
+    open(my $install_fh, '>', 'debian/w3c-dtd-xhtml.install');
+    open(my $links_fh, '>', 'debian/w3c-dtd-xhtml.links');
+    foreach my $file (keys %LEGACY_DCL_LINKS) {
+        my $install = $LEGACY_DCL_LINKS{$file};
+        print {$links_fh} "$install $file\n";
+    }
+    foreach my $file (keys %$legacy_src) {
+        my $install = dirname $legacy_src->{$file};
+        print {$install_fh} "$file $install\n";
+    }
+    close $install_fh;
+    close $links_fh;
+    return;
 }
 
 sub sanity_check {
