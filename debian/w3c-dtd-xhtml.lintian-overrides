@@ -1,3 +1,9 @@
 # Upstream does not package the changelog but we state where to
 # find it in README.Debian
 w3c-dtd-xhtml: no-upstream-changelog
+# These checks look fine to me.
+# See #666127
+w3c-dtd-xhtml: package-contains-broken-symlink usr/share/xml/xhtml/schema/dtd/1.0/xhtml1.dcl ../../../../declaration/xml.dcl
+w3c-dtd-xhtml: package-contains-broken-symlink usr/share/xml/xhtml/schema/dtd/1.1/xml1.dcl ../../../../declaration/xml.dcl
+w3c-dtd-xhtml: package-contains-broken-symlink usr/share/xml/xhtml/schema/dtd/1.1/xml1n.dcl ../../../../declaration/xml1n.dcl
+w3c-dtd-xhtml: package-contains-broken-symlink usr/share/xml/xhtml/schema/dtd/basic/xml1.dcl ../../../../declaration/xml.dcl
