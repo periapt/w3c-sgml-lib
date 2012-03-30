@@ -26,11 +26,28 @@ Readonly my %LEGACY_DCL_LINKS => (
     "$LEGACY_DTD_DIR/1.1/xml1n.dcl" => 'usr/share/xml/declaration/xml1n.dcl',
     "$LEGACY_DTD_DIR/basic/xml1.dcl" => 'usr/share/xml/declaration/xml.dcl',
 );
+# Set this to 0 if you need to compare the merged w3c-dtd-xhtml
+# with the old one.
+Readonly my $SPARSE_LEGACY => 1;
 
 sanity_check();
+
+# This subroutine generates the debian/xmlcatalogs file - i.e. the
+# file registering XML DTD's from the main package w3c-sgml-lib.
+# I think something like it but more generic should be in xml-core.
 generate_debian_xmlcatalogs();
+
+# This bit is trying to keep w3c-dtd-xhtml as close as possible 
+# to its last maintained state whilst leveraging upstream
+# input from the W3C.
+
+# legacy src file -> legacy dest file
 my %legacy_src = collect_legacy_src();
+
+# legacy src file -> public id
 my %public_ids = extract_public_ids(keys %legacy_src);
+
+
 generate_legacy_stuff(\%legacy_src, \%public_ids);
 
 exit(0);
@@ -99,20 +116,42 @@ sub extract_public_ids {
 }
 
 sub generate_legacy_stuff {
-    my ($legacy_src, $public_ids) = @_;
     open(my $install_fh, '>', 'debian/w3c-dtd-xhtml.install');
     open(my $links_fh, '>', 'debian/w3c-dtd-xhtml.links');
     foreach my $file (keys %LEGACY_DCL_LINKS) {
         my $install = $LEGACY_DCL_LINKS{$file};
         print {$links_fh} "$install $file\n";
     }
-    foreach my $file (keys %$legacy_src) {
-        my $install = dirname $legacy_src->{$file};
-        print {$install_fh} "$file $install\n";
+    foreach my $file (keys %legacy_src) {
+        if ($SPARSE_LEGACY and my $link = find_matching_file($public_ids{$file})) {
+            print {$links_fh} "$link $legacy_src{$file}\n";
+        }
+        else {
+            my $install = dirname $legacy_src{$file};
+            print {$install_fh} "$file $install\n";
+        }
     }
     close $install_fh;
     close $links_fh;
     return;
+}
+
+sub find_matching_file {
+    my $public_id = shift;
+    my $matching_file;
+    find(sub {
+            return if $matching_file;
+            return if not -f $_;
+            my $doc = read_file($_);
+            if ($doc =~ $PUBLIC_ID_RE and $1 eq $public_id) {
+                $matching_file = $File::Find::name;
+                $matching_file =~ s{\A$SOURCE_DIR/}{$DEST_DIR/}xms;
+            }
+            return;
+        },
+        $SOURCE_DIR
+    );
+    return $matching_file;
 }
 
 sub sanity_check {
