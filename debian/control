@@ -11,9 +11,8 @@ Vcs-Browser: https://github.com/periapt/w3c-sgml-lib
 
 Package: w3c-sgml-lib
 Architecture: all
-Homepage: http://www.w3.org/TR/xhtml11/
 Depends: ${misc:Depends}
-Breaks: w3c-markup-validator (<< 1.2+dfsg-6)
+Breaks: w3c-markup-validator (<< 1.2+dfsg-6), w3c-dtd-xhtml (<< 1.2-2)
 Description: w3.org DTD and catalog files
  This package consists of all the definition files used by the 
  W3C Markup Validator. It consists of DTDs and modules, entity files
@@ -22,6 +21,7 @@ Description: w3.org DTD and catalog files
 
 Package: w3c-dtd-xhtml
 Architecture: all
+Homepage: http://www.w3.org/TR/xhtml11/
 Depends: ${misc:Depends}, sgml-data (>= 1.9.1), w3c-sgml-lib (= ${source:Version})
 Description: W3C eXtensible HyperText Markup Language (XHTML) DTD [deprecated]
  XHTML is a family of XML based document types that reproduce, subset and extend
@@ -29,5 +29,5 @@ Description: W3C eXtensible HyperText Markup Language (XHTML) DTD [deprecated]
  eXtensible HyperText Markup Language (XHTML) versions Basic, 1.0 and 1.1.
  .
  This package is legacy and deprecated in that its format does not make it
- easier to update with newer versions from w3.org. So its contents are frozen
+ easy to update with newer versions from w3.org. So its contents are frozen
  but it does attempt to use links to files from w3c-sgml-lib whereever possible.
