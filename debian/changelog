@@ -1,4 +1,11 @@
-w3c-sgml-lib (1.2-2) UNRELEASED; urgency=low
+w3c-sgml-lib (1.2-3) unstable; urgency=high
+
+  * Split out w3c-dtd-xhtml again and added Conflicts
+    clause (Closes: #615125)
+
+ -- Nicholas Bamber <nicholas@periapt.co.uk>  Fri, 27 Apr 2012 12:18:44 +0100
+
+w3c-sgml-lib (1.2-2) unstable; urgency=low
 
   * Moved to personal maintainership
   * Adopting proposals from Samuel Bronson for resolving
@@ -13,8 +20,10 @@ w3c-sgml-lib (1.2-2) UNRELEASED; urgency=low
   * Raised compat level and debhelper version to 8
   * Added debian/generate_catalog_stuff.pl to build rules
     to regnerate debian/xmlcatalogs
+  * Merged in w3c-dtd-xhtml (Closes: #555118)
+    - Home page field added (Closes: #615360)
 
- -- Nicholas Bamber <nicholas@periapt.co.uk>  Sun, 11 Mar 2012 16:17:24 +0000
+ -- Nicholas Bamber <nicholas@periapt.co.uk>  Sat, 14 Apr 2012 13:13:38 +0100
 
 w3c-sgml-lib (1.2-1) unstable; urgency=low
 
