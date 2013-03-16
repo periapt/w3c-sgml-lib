@@ -1,10 +1,10 @@
-w3c-sgml-lib (1.3-1) UNRELEASED; urgency=low
+w3c-sgml-lib (1.3-1) unstable; urgency=low
 
   * New upstream release (Closes: #665298)
   * Updated dependencies and raised compat level to 9
   * Raised standards version to 3.9.4
 
- -- Nicholas Bamber <nicholas@periapt.co.uk>  Wed, 03 Oct 2012 09:59:36 +0100
+ -- Nicholas Bamber <nicholas@periapt.co.uk>  Sat, 16 Mar 2013 16:11:53 +0000
 
 w3c-sgml-lib (1.2-3) unstable; urgency=high
 
