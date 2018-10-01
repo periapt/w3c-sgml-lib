@@ -1,3 +1,9 @@
+w3c-sgml-lib (1.3-2) UNRELEASED; urgency=medium
+
+  * Use secure URI in Vcs control header.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 01 Oct 2018 08:36:07 +0100
+
 w3c-sgml-lib (1.3-1) unstable; urgency=low
 
   * New upstream release (Closes: #665298)
