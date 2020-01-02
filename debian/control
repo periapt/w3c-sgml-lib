@@ -15,7 +15,7 @@ Depends: ${misc:Depends}
 Breaks: w3c-markup-validator (<< 1.2+dfsg-6)
 Conflicts: w3c-dtd-xhtml
 Description: w3.org DTD and catalog files
- This package consists of all the definition files used by the 
+ This package consists of all the definition files used by the
  W3C Markup Validator. It consists of DTDs and modules, entity files
  and XML and SGML catalogs. The catalogs are registered with the root
  catalogs.
