@@ -6,7 +6,7 @@ Build-Depends: debhelper-compat (= 12), xml-core (>= 0.13+nmu2~),
  libreadonly-perl, libxml-libxml-perl, libautodie-perl
 Standards-Version: 3.9.4
 Homepage: http://validator.w3.org/sgml-lib
-Vcs-Git: git://github.com/periapt/w3c-sgml-lib.git
+Vcs-Git: https://github.com/periapt/w3c-sgml-lib.git
 Vcs-Browser: https://github.com/periapt/w3c-sgml-lib
 
 Package: w3c-sgml-lib
