@@ -1,4 +1,4 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Contact: http://validator.w3.org/feedback.html
 Source: http://validator.w3.org/dist/sgml-lib.tar.gz
 Upstream-Name: W3C SGML Library
