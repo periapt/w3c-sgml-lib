@@ -1,3 +1,0 @@
-version=3
-opts="uversionmangle=s/_/./g" \
-  http://validator.w3.org/dist/sgml-lib-(.*)\.tar\.gz
