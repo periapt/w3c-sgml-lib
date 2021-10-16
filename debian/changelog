@@ -1,3 +1,11 @@
+w3c-sgml-lib (1.3-2) UNRELEASED; urgency=medium
+
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on xml-core.
+    + w3c-sgml-lib: Drop versioned constraint on w3c-markup-validator in Breaks.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sat, 16 Oct 2021 18:27:35 -0000
+
 w3c-sgml-lib (1.3-1) unstable; urgency=low
 
   * New upstream release (Closes: #665298)
