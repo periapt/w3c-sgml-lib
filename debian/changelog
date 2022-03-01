@@ -1,3 +1,9 @@
+w3c-sgml-lib (1.3-2) UNRELEASED; urgency=medium
+
+  * Trim trailing whitespace.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Tue, 01 Mar 2022 19:12:41 -0000
+
 w3c-sgml-lib (1.3-1) unstable; urgency=low
 
   * New upstream release (Closes: #665298)
@@ -18,7 +24,7 @@ w3c-sgml-lib (1.2-2) unstable; urgency=low
   * Moved to personal maintainership
   * Adopting proposals from Samuel Bronson for resolving
     conflicts with w3c-dtd-xhtml (Closes: #662091)
-    - Removing broken links 
+    - Removing broken links
     - Removed legacy support
     - Removed Provides clause for w3c-dtd-xhtml (Closes: #615125)
     - Moved directory to w3c-sgml-lib from xhtml
